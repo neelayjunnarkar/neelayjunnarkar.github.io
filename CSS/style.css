@@ -21,6 +21,9 @@ body{
     display: block;
     background-color: rgb(0, 124, 220);<!--rgb(0, 108, 191);rgb(0, 144, 255);#0090FF;-->
     padding-left: 1cm;
+    padding-right: 1cm;
+    padding-bottom: 1cm;
+    padding-top: 1cm;
 }
 
 .blockSideBar{
@@ -30,7 +33,12 @@ body{
   font-family: ;
   text-align: left;
   font-size: 24px;
-  margin-top: 5cm;
+}
+
+.blockHeader{
+  width: 926px;
+  color: #eee8d5;
+  /*font-family: ;*/
 }
 
 .footer{
