@@ -29,15 +29,15 @@ body{
 .blockSideBar{
   font-family: Georgia;
   width: 3cm;
-  height: 1000px;
+  height: 1425px;
   color: rgb(225, 230, 229); /*font-color*/
   text-align: left;
   font-size: 24px;
 }
 
 .blockHeader{
-  font-family: Georgia;
-  width: 926px;
+  font-family: fantasy;
+  width: inherit;
   color: rgb(17, 18, 19);/*#eee8d5;*/
   display: block;
   text-align: center;
