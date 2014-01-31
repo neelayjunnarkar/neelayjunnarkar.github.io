@@ -20,6 +20,17 @@ body{
     margin-bottom: auto;
     display: block;
     background-color: rgb(0, 124, 220);<!--rgb(0, 108, 191);rgb(0, 144, 255);#0090FF;-->
+    padding-left: 1cm;
+}
+
+.blockSideBar{
+  width: 3cm;
+  height: 1000px;
+  color: rgb(225, 230, 229); /*font-color*/
+  font-family: ;
+  text-align: left;
+  font-size: 24px;
+  margin-top: 5cm;
 }
 
 .footer{
