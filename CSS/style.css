@@ -38,10 +38,10 @@ body{
 .blockHeader{
   font-family: Georgia;
   width: 926px;
-  color: #eee8d5;
+  color: rgb(17, 18, 19);/*#eee8d5;*/
   display: block;
   text-align: center;
-  font-size: 40px;
+  font-size: -webkit-xxx-large;
 }
 
 .footer{
