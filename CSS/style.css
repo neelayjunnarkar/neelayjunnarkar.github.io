@@ -38,8 +38,8 @@ body{
 .blockHeader{
   width: 926px;
   color: #eee8d5;
+  display: block;
   text-align: center;
-  font-family: Helvetica;
   font-size: 40px;
 }
 
