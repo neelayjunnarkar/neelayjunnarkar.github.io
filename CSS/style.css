@@ -6,7 +6,7 @@ html{
 
 body{
   background-color: rgb(0, 77 ,125);
-  font-family: Georgia;
+
   padding-top: 1cm;
   /*padding-bottom: 5cm;*/
 }
@@ -27,6 +27,7 @@ body{
 }
 
 .blockSideBar{
+  font-family: Georgia;
   width: 3cm;
   height: 1000px;
   color: rgb(225, 230, 229); /*font-color*/
@@ -36,6 +37,7 @@ body{
 }
 
 .blockHeader{
+  font-family: Georgia;
   width: 926px;
   color: #eee8d5;
   display: block;
