@@ -6,6 +6,10 @@
   format ("truetype");
 }
 
+.Audiowide{
+   font-family: 'Audiowide';
+}
+
 html{
   height: 100%; 
 }
