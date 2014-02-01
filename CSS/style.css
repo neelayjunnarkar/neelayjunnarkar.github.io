@@ -37,12 +37,11 @@ body{
 
 .blockHeader{
   font-family: 'Audiowide', cursive;
-  /*font-family: fantasy;*/
   width: inherit;
-  color: rgb(17, 18, 19);/*#eee8d5;*/
-  display: block;
+  color: rgb(0, 20, 32);
+  display: inline-block;
   text-align: center;
-  font-size: -webkit-xxx-large;
+  font-size: 60px;
 }
 
 .footer{
@@ -53,5 +52,5 @@ body{
   margin-top: .5cm;
   margin-bottom: auto;
   display: block;
-  background-color: rgb(0, 77, 125);
+  background-color: inherit; /*rgb(0, 77, 125)*/
 }
