@@ -36,7 +36,8 @@ body{
 }
 
 .blockHeader{
-  font-family: fantasy;
+  font-family: 'Audiowide', cursive;
+  /*font-family: fantasy;*/
   width: inherit;
   color: rgb(17, 18, 19);/*#eee8d5;*/
   display: block;
