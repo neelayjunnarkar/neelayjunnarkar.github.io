@@ -2,12 +2,7 @@
 
 @font-face{
   font-family: 'Audiowide';
-  src: url("/Fonts/Audiowide-Regular.ttf")
-  format ("truetype");
-}
-
-.Audiowide{
-   font-family: 'Audiowide';
+  src: url("/Fonts/Audiowide-Regular.ttf") format ("truetype");
 }
 
 html{
