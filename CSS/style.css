@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+@font-face{
+  font-family: 'Audiowide';
+  src: url("/Fonts/Audiowide-Regular.ttf")
+  format ("truetype");
+}
+
 html{
   height: 100%; 
 }
@@ -27,7 +33,7 @@ body{
 }
 
 .blockSideBar{
-  font-family: Georgia;
+  font-family: 'Audiowide', cursive;
   width: 3cm;
   height: 1425px;
   color: rgb(225, 230, 229); /*font-color*/
