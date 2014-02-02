@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
-/*@font-face{*/
-/*  font-family: 'Audiowide';*/
-/*  src: url("/Fonts/Audiowide-Regular.ttf") format ("truetype");*/
-/*}*/
+@font-face{
+  font-family: 'Regular';
+  src: url("/Fonts/Audiowide-Regular.ttf");
+}
 
 html{
   height: 100%; 
@@ -32,7 +32,7 @@ body{
 }
 
 .blockSideBar{
-  font-family: 'Audiowide';
+  font-family: 'Regular';
   width: 3cm;
   height: 1425px;
   color: rgb(225, 230, 229); /*font-color*/
@@ -41,7 +41,7 @@ body{
 }
 
 .blockHeader{
-  font-family: 'Audiowide';
+  font-family: 'Regular';
   width: inherit;
   color: rgb(0, 20, 32);
   display: inline-block;
