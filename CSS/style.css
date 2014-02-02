@@ -31,15 +31,6 @@ body{
     padding-top: 1cm;
 }
 
-.blockSideBar{
-  font-family: 'Regular';
-  width: 3cm;
-  height: 1425px;
-  color: rgb(225, 230, 229); /*font-color*/
-  text-align: left;
-  font-size: 24px;
-}
-
 .blockHeader{
   font-family: 'Regular';
   width: inherit;
@@ -47,6 +38,17 @@ body{
   display: inline-block;
   text-align: center;
   font-size: 60px;
+}
+
+.blockSideBar{
+  font-family: 'Regular';
+  width: 3cm;
+  height: 1400px;
+  color: rgb(225, 230, 229); /*font-color*/
+  text-align: left;
+  font-size: 20px;
+  margin-top: 1cm;
+  margin-bottom: 1cm;
 }
 
 .footer{
