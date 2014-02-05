@@ -1,10 +1,13 @@
-@charset "UTF-8";
+rset "UTF-8";
 
 @font-face{
   font-family: 'Audiowide';
   src: url("/Fonts/Audiowide-Regular.ttf");
 }
-
+@font-face{
+	font-family: 'Hammersmith';
+	src: url("/Fonts/HammersmithOne.ttf")
+}
 html{
   height: 100%; 
 }
@@ -56,23 +59,22 @@ body{
 .blockArticleHeader{
 	font-family: 'Audiowide';
 	float: left;
-	margin-left: 1cm;
 	text-align: justify;
 	font-size: 25px;
 	color: rgb(0, 24, 38); /*font-color*/
 }
 
 .blockArticle{
-	font-family: 'Georgia';
+	font-family: 'Hammersmith';
 	float: left;
-	margin-left: 1cm;
-	color: rgb(255, 255, 255); /*font-color*/
+	margin-left: 1.5cm;
+	color: rgb(0, 36, 57); /*font-color*/
 	text-align: justify;
 	font-size: 12px;
 }
 
 .footer{
-	width: 1250px;
+  width: 1250px;
   height: 5cm;
   margin-left: auto;
   margin-right: auto;
@@ -81,3 +83,4 @@ body{
   display: block;
   background-color: inherit; /*rgb(0, 77, 125)*/
 }
+
