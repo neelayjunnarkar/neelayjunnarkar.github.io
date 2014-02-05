@@ -65,9 +65,10 @@ body{
 }
 
 .blockArticle{
-	font-family: 'Hammersmith';
+	font-family: 'Audiowide';
 	float: left;
 	margin-left: 1.5cm;
+	margin-top: .85cm;
 	color: rgb(0, 36, 57); /*font-color*/
 	text-align: justify;
 	font-size: 12px;
