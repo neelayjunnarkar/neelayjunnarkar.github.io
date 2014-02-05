@@ -32,6 +32,7 @@ body{
 
 .blockHeader{
   font-family: 'Audiowide';
+  text-shadow: 0 0 50px rgb(0, 5, 8);
   width: inherit;
   color: rgb(0, 10, 16); /*font-color*/
   display: inline-block;
@@ -41,6 +42,7 @@ body{
 
 .blockSideBar{
   font-family: 'Audiowide';
+  text-shadow: 0 0 10px rgb(0, 48, 76);
   width: 3cm;
   float: left;
   height: 1400px;
