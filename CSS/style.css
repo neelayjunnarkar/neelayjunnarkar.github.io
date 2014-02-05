@@ -64,7 +64,7 @@ a.blockSideBar:visited{
         transition:.5s;
 }
 a.blockSideBar:hover{
-	color: rgb(0, 77, 125);
+	color: rgb(0, 39, 63);
 	text-shadow: 0 0 1px rgb(0, 48, 76);
 	text-decoration: none;
 	font-weight: 400;
@@ -75,9 +75,9 @@ a.blockSideBar:hover{
         transition:.5s;
 }
 a.blockSideBar:active{
-	color: rgb(0, 77, 125);
+	color: rgb(0, 29, 47);
 	text-decoration: none;
-	text-shadow: 0 0 10px rgb(0, 48, 76);
+	text-shadow: 0 0 10px rgb(0, 24, 38);
 	font-weight: 400;
 	border-bottom-width: 2px;
 	-o-transition:.2s;
