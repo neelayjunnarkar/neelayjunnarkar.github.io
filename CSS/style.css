@@ -43,6 +43,49 @@ body{
   font-size: 60px;
 }
 
+a.blockSideBar:link{
+	text-decoration: none;
+	color: rgb(0, 12, 19);
+	font-weight: 400;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
+a.blockSideBar:visited{
+	color: rgb(0, 12, 19);
+	text-decoration: none;
+	font-weight: 400;
+	-o-transition:.5s;
+        -ms-transition:.5s;
+        -moz-transition:.5s;
+        -webkit-transition:.5s;
+        transition:.5s;
+}
+a.blockSideBar:hover{
+	color: rgb(0, 124, 220);
+	text-shadow: 0 0 1px rgb(0, 48, 76);
+	text-decoration: none;
+	font-weight: 400;
+	-o-transition:.5s;
+        -ms-transition:.5s;
+        -moz-transition:.5s;
+        -webkit-transition:.5s;
+        transition:.5s;
+}
+a.blockSideBar:active{
+	color: rgb(0, 77, 125);
+	text-decoration: none;
+	text-shadow: 0 0 10px rgb(0, 48, 76);
+	font-weight: 400;
+	border-bottom-width: 2px;
+	-o-transition:.2s;
+        -ms-transition:.2s;
+        -moz-transition:.2s;
+        -webkit-transition:.2s;
+        transition:.2s;
+}
 .blockSideBar{
   font-family: 'Audiowide';
   text-shadow: 0 0 10px rgb(0, 48, 76);
