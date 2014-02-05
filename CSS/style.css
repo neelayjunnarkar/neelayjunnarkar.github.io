@@ -54,6 +54,7 @@ body{
 .blockArticleHeader{
 	font-family: 'Audiowide';
 	float: left;
+	margin-left: 1cm;
 	text-align: justify;
 	font-size: 25px;
 	color: rgb(0, 24, 38); /*font-color*/
@@ -62,13 +63,14 @@ body{
 .blockArticle{
 	font-family: 'Georgia';
 	float: left;
+	margin-left: 1cm;
 	color: rgb(255, 255, 255); /*font-color*/
 	text-align: justify;
 	font-size: 12px;
 }
 
 .footer{
-  width: 1250px;
+	width: 1250px;
   height: 5cm;
   margin-left: auto;
   margin-right: auto;
