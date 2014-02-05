@@ -64,7 +64,7 @@ a.blockSideBar:visited{
         transition:.5s;
 }
 a.blockSideBar:hover{
-	color: rgb(0, 124, 220);
+	color: rgb(0, 77, 125);
 	text-shadow: 0 0 1px rgb(0, 48, 76);
 	text-decoration: none;
 	font-weight: 400;
