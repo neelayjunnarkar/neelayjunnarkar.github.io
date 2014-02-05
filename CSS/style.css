@@ -108,7 +108,7 @@ a.blockSideBar:active{
 }
 
 a.blockArticle:link{
-	color:
+	color: rgb(0, 191, 255);
 	text-decoration: none;
 	font-weight: 400;
 	-o-transition:.5s;
@@ -118,7 +118,7 @@ a.blockArticle:link{
 	transition:.5s;
 }
 a.blockArticle:visited{
-	color:
+	color: rgb(0, 191, 255);
 	text-decoration: none;
 	font-weight: 400;
 	-o-transition:.5s;
@@ -156,7 +156,7 @@ a.blockArticle:active{
 	/*margin-top: .85cm;*/
 	color: rgb(0, 36, 57); /*font-color*/
 	text-align: justify;
-	font-size: 15px;
+	font-size: 14px;
 }
 
 .footer{
