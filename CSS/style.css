@@ -108,7 +108,7 @@ a.blockSideBar:active{
 }
 
 a.blockArticle:link{
-	color: rgb(0, 191, 255);
+	color: rgb(0, 64, 170);
 	text-decoration: none;
 	font-weight: 400;
 	-o-transition:.5s;
@@ -118,7 +118,7 @@ a.blockArticle:link{
 	transition:.5s;
 }
 a.blockArticle:visited{
-	color: rgb(0, 191, 255);
+	color: rgb(0, 64, 170);
 	text-decoration: none;
 	font-weight: 400;
 	-o-transition:.5s;
@@ -128,7 +128,7 @@ a.blockArticle:visited{
 	transition:.5s;
 }
 a.blockArticle:hover{
-	color: #0090FF;
+	color: rgb(0, 32, 85);
 	text-decoration: none;
 	font-weight: 400;
 	-o-transition:.5s;
@@ -138,7 +138,7 @@ a.blockArticle:hover{
 	transition:.5s;
 }
 a.blockArticle:active{
-	color: #0074CC;
+	color: rgb(0, 16, 43);
 	text-decoration: none;
 	font-weight: 400;
 	border: 0px solid rgb(0, 12, 19);
