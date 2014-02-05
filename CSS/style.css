@@ -51,6 +51,22 @@ body{
   margin-bottom: 1cm;
 }
 
+.blockArticleHeader{
+	font-family: 'Audiowide';
+	float: left;
+	text-align: justify;
+	font-size: 25px;
+	color: rgb(0, 24, 38); /*font-color*/
+}
+
+.blockArticle{
+	font-family: 'Georgia';
+	float: left;
+	color: rgb(255, 255, 255); /*font-color*/
+	text-align: justify;
+	font-size: 12px;
+}
+
 .footer{
   width: 1250px;
   height: 5cm;
