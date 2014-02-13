@@ -19,14 +19,13 @@ body{
 }
 
 .block{
-    width: 1000px;
+    width: 75%;
     height: 1500px;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-    display: block;
-    background-color: rgb(0, 124, 220);/*<!--rgb(0, 108, 191);rgb(0, 144, 255);#0090FF;-->*/
+    background-color: rgb(0, 124, 220);
     padding-left: 1cm;
     padding-right: 1cm;
     padding-bottom: 1cm;
@@ -34,18 +33,17 @@ body{
 }
 
 .blockHeader{
-  font-family: 'Audiowide';
-  text-shadow: 0 0 50px rgb(0, 5, 8);
-  width: inherit;
-  color: rgb(0, 10, 16); /*font-color*/
-  display: inline-block;
-  text-align: center;
-  font-size: 60px;
+    font-family: 'Audiowide';
+    text-shadow: 0 0 100px rgb(0, 5, 8);
+
+    text-align: center;
+    font-size: 68px;
+    color: rgb(1, 10, 16);
 }
 
-a.blockSideBar:link{
+a.sidebar:link{
 	text-decoration: none;
-	color: rgb(0, 12, 19);
+    color: rgb(0, 12, 19);
 	font-weight: 400;
 	-o-transition:.5s;
 	-ms-transition:.5s;
@@ -53,111 +51,72 @@ a.blockSideBar:link{
 	-webkit-transition:.5s;
 	transition:.5s;
 }
-a.blockSideBar:visited{
+a.sidebar:visited{
 	color: rgb(0, 12, 19);
 	text-decoration: none;
 	font-weight: 400;
 	-o-transition:.5s;
-        -ms-transition:.5s;
-        -moz-transition:.5s;
-        -webkit-transition:.5s;
-        transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
 }
-a.blockSideBar:hover{
-	color: rgb(0, 39, 63);
-	text-shadow: 0 0 1px rgb(0, 48, 76);
+a.sidebar:hover{
+	color: rgba(0, 12, 19, 0.55); /*rgb(0, 39, 63);*/
+	text-shadow: 0 0 10px rgb(0, 48, 76);/*0 0 1px rgb(0, 48, 76);*/
 	text-decoration: none;
 	font-weight: 400;
 	-o-transition:.5s;
-        -ms-transition:.5s;
-        -moz-transition:.5s;
-        -webkit-transition:.5s;
-        transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
 }
-a.blockSideBar:active{
+a.sidebar:active{
 	color: rgb(0, 29, 47);
 	text-decoration: none;
-	text-shadow: 0 0 10px rgb(0, 24, 38);
+	text-shadow: 0 0 1px rgba(0, 48, 76, 10);
 	font-weight: 400;
 	border-bottom-width: 2px;
 	-o-transition:.2s;
-        -ms-transition:.2s;
-        -moz-transition:.2s;
-        -webkit-transition:.2s;
-        transition:.2s;
-}
-.blockSideBar{
-  font-family: 'Audiowide';
-  text-shadow: 0 0 10px rgb(0, 48, 76);
-  width: 3cm;
-  float: left;
-  height: 1400px;
-  color: rgb(0, 12, 19); /*font-color*/
-  text-align: justify;
-  font-size: 20px;
-  margin-top: 1cm;
-  margin-bottom: 1cm;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
 }
 
-.blockArticleHeader{
-	font-family: 'Audiowide';
-	float: left;
-	text-align: justify;
-	font-size: 25px;
-	color: rgb(0, 24, 38); /*font-color*/
+.sidebar{
+    float: left;
+    font-weight: 400;
+    font-family: 'Audiowide';
+    text-shadow: 0 0 15px rgb(0, 48, 76);
+    text-align: left;
+    font-size: 24px;
+    color: rgba(0, 12, 19, 0.55);
+    width: 150px;
 }
 
-a.blockArticle:link{
-	color: rgb(0, 64, 170);
-	text-decoration: none;
-	font-weight: 400;
-	-o-transition:.5s;
-	-ms-transition:.5s;
-	-moz-transition:.5s;
-	-webkit-transition:.5s;
-	transition:.5s;
+.articleBody{
+    margin-left: 25px;
+    margin-top: 5px;
+    text-align: justify;
+    color: rgb(0, 36, 57);
+    line-height: 130%;
 }
-a.blockArticle:visited{
-	color: rgb(0, 36, 57);
-	text-decoration: none;
-	font-weight: 400;
-	-o-transition:.5s;
-	-ms-transition:.5s;
-	-moz-transition:.5s;
-	-webkit-transition:.5s;
-	transition:.5s;
+
+articleHeader{
+    font-weight: 100;
+    font-family: 'Audiowide';
+    font-size: 26px;
+    color: rgb(0, 24, 38);
 }
-a.blockArticle:hover{
-	color: rgb(0, 32, 85);
-	text-decoration: none;
-	font-weight: 400;
-	-o-transition:.5s;
-	-ms-transition:.5s;
-	-moz-transition:.5s;
-	-webkit-transition:.5s;
-	transition:.5s;
-}
-a.blockArticle:active{
-	color: rgb(0, 16, 43);
-	text-decoration: none;
-	font-weight: 400;
-	border: 0px solid rgb(0, 12, 19);
-        border-bottom-width: 2px;
-        -o-transition:.2s;
-        -ms-transition:.2s;
-        -moz-transition:.2s;
-        -webkit-transition:.2s;
-        transition:.2s;	
-}
-.blockArticle{
-	font-family: 'Audiowide';
-	float: left;
-	margin-left: 1.5cm;
-	/*margin-top: .85cm;*/
-	color: rgb(0, 36, 57); /*font-color*/
-	text-align: justify;
-	font-size: 14px;
-}
+
+.article{
+    font-size: 13px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    font-family: 'Audiowide';
+}    
 
 .footer{
   width: 1250px;
