@@ -1,3 +1,3 @@
-while(true){
-	window.open(/pages/prions.html);
+while (true) {
+	window.open("/pages/prions.html");
 }
