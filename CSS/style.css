@@ -4,18 +4,14 @@
   font-family: 'Audiowide';
   src: url("/Fonts/Audiowide-Regular.ttf");
 }
-@font-face{
-	font-family: 'Hammersmith';
-	src: url("/Fonts/HammersmithOne.ttf")
-}
+
 html{
   height: 100%; 
 }
 
 body{
-  background-color: rgb(0, 77 ,125);
+  background-color: rgba(0, 77 ,125, 1);
   padding-top: 1cm;
-  /*padding-bottom: 5cm;*/
 }
 
 .block{
@@ -25,7 +21,7 @@ body{
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-    background-color: rgb(0, 124, 220);
+    background-color: rgba(0, 124, 220, 1);
     padding-left: 1cm;
     padding-right: 1cm;
     padding-bottom: 1cm;
@@ -35,10 +31,16 @@ body{
 .blockHeader{
     font-family: 'Audiowide';
     text-shadow: 0 0 100px rgb(0, 5, 8);
-
     text-align: center;
-    font-size: 68px;
+    font-size: 61px;
     color: rgb(1, 10, 16);
+} 
+
+smallBlockHeader{
+    font-size: 10px;
+    font-weight: 400; 
+    font-family: 'Audiowide';
+    text-shadow: 0 0 15px rgb(0, 5, 8);
 }
 
 a.sidebar:link{
@@ -62,8 +64,8 @@ a.sidebar:visited{
     transition:.5s;
 }
 a.sidebar:hover{
-	color: rgba(0, 12, 19, 0.55); /*rgb(0, 39, 63);*/
-	text-shadow: 0 0 10px rgb(0, 48, 76);/*0 0 1px rgb(0, 48, 76);*/
+	color: rgba(0, 12, 19, 0.55);
+	text-shadow: 0 0 10px rgb(0, 48, 76);
 	text-decoration: none;
 	font-weight: 400;
 	-o-transition:.5s;
@@ -90,15 +92,14 @@ a.sidebar:active{
     font-weight: 400;
     font-family: 'Audiowide';
     text-shadow: 0 0 15px rgb(0, 48, 76);
-    text-align: left;
+    text-align: justify;
     font-size: 24px;
     color: rgba(0, 12, 19, 0.55);
-    width: 150px;
 }
 
 .articleBody{
-    padding-left: 150px;
-    margin-top: 5px;
+    margin-top: 30px;
+    padding-left: 16%;
     text-align: justify;
     color: rgb(0, 36, 57);
     line-height: 130%;
@@ -112,7 +113,9 @@ articleHeader{
 }
 
 .article{
+    padding-left: 0%;
     font-size: 13px;
+    text-align: left;
     margin-left: 25px;
     margin-bottom: 25px;
     font-family: 'Audiowide';
@@ -127,5 +130,14 @@ articleHeader{
   margin-bottom: auto;
   display: block;
   background-color: inherit; /*rgb(0, 77, 125)*/
+}
+
+/* <br> formats */
+
+.blockHeaderBr{
+    font-size: 33px;   
+}
+.articleNewLine{
+    font-size: 1px;
 }
 
