@@ -97,7 +97,7 @@ a.sidebar:active{
 }
 
 .articleBody{
-    margin-left: 25px;
+    padding-left: 150px;
     margin-top: 5px;
     text-align: justify;
     color: rgb(0, 36, 57);
