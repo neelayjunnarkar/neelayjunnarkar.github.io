@@ -1,3 +1,5 @@
+/*need to change margins of articleBlock to auto-adjust to sidebar which should auto-adjust to length of words (links)*/
+
 @charset "UTF-8";
 
 @font-face{
@@ -101,7 +103,7 @@ a.sidebar:active{
     padding-left: 16%;
     text-align: justify;
     color: rgb(0, 36, 57);
-    line-height: 130%;
+    line-height: 150%;
 }
 
 articleHeader{
