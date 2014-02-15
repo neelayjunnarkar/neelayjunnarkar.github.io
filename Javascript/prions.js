@@ -8,9 +8,9 @@ Ideas for Future Developement
 
 */
 
-//while (true) {
-//	window.open("/pages/prions/");
-//}
+while (true) {
+	window.open("/pages/prions/");
+}
 
 /* For testing purposes. Opens 'Neelay Junnarkarkar | Home' */
-window.open("/");
+//window.open("/");
