@@ -17,7 +17,7 @@ body{
 
 .block{
     width: 75%;
-    height: 93.750em;
+	height: 93.75em;
     margin: auto;
     padding: 2.362em; /*1cm*/ 
     background-color: #0480bf
@@ -37,9 +37,9 @@ smallBlockHeader{
     font-family: 'Audiowide';
 }
 
-a.sidebar:link{
+.sidebar a:link {
 	text-decoration: none;
-    color: rgb(0, 12, 19);
+    color: rgba(0, 12, 19, 0.9);
 	-o-transition:.5s;
 	-ms-transition:.5s;
 	-moz-transition:.5s;
@@ -47,16 +47,16 @@ a.sidebar:link{
 	transition:.5s;
 
 }
-a.sidebar:visited{
+.sidebar a:visited{
 	text-decoration: none;
-	color: rgb(0, 12, 19);
+	color: rgba(0, 12, 19, 0.9);
 	-o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition:.5s;
 }
-a.sidebar:hover{
+.sidebar a:hover{
     text-decoration: none;
 	color: rgba(0, 12, 19, 0.55);
 	-o-transition:.5s;
@@ -65,13 +65,12 @@ a.sidebar:hover{
     -webkit-transition:.5s;
     transition:.5s;
 }
-a.sidebar:active{
+.sidebar a:active{
 	text-decoration: none;
-    color: rgb(0, 29, 47);
-	border-bottom-width: 2px;
+	color: rgba(0, 8, 14, 1);
 	-o-transition:.2s;
     -ms-transition:.2s;
-    -moz-transition:.2s;
+	-moz-transition:.2s;
     -webkit-transition:.2s;
     transition:.2s;
 }
@@ -79,36 +78,40 @@ a.sidebar:active{
 .sidebar{
     float: left; 
     width: 15%;
+	height: 90%;
     font-family: 'Audiowide';
     font-size: 24px;
     text-align: justify;  
-    color: rgba(0, 12, 19, 0.55);
+    color: rgba(0, 12, 19, 0.55);	
 }
 
 .articleBody{
     margin-top: 1.563em;
-    width: 81%;
-    float: right;
     line-height: 150%;
     text-align: justify;
-    color: rgb(0, 36, 57);
+    color: rgba(0, 36, 57, 1);
 }
 
 articleHeader{
-    font-weight: 100;
+    font-weight: 400;
     font-family: 'Audiowide';
     font-size: 1.625em;
-    color: rgb(0, 24, 38);
+    color: rgba(0, 12, 19, 0.97);
+}
+
+.article b{
+	color: rgba(0, 12, 19, 0.93);
 }
 
 .article{
-    padding-left: 0%;
+    padding-left: 19%;
     margin-left: 1.563em;
     margin-bottom: 1.563em;
     font-size: 0.813em;
     text-align: left;
     font-family: 'Audiowide';
-}    
+	text-indent: 1.875em; 
+}
 
 .footer{
 
