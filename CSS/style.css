@@ -1,4 +1,3 @@
-/*need to change margins of articleBlock to auto-adjust to sidebar which should auto-adjust to length of words (links)*/
 
 @charset "UTF-8";
 
@@ -12,52 +11,45 @@ html{
 }
 
 body{
-  background-color: rgba(0, 77 ,125, 1);
-  padding-top: 1cm;
+    padding-top: 2.362em; /*1cm*/
+    background-color: #22313F/*rgba(0, 77 ,125, 1); /*rgba(0, 77, 125, 1)*/
 }
 
 .block{
     width: 75%;
-    height: 1500px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    background-color: rgba(0, 124, 220, 1);
-    padding-left: 1cm;
-    padding-right: 1cm;
-    padding-bottom: 1cm;
-    padding-top: 1cm;
+    height: 93.750em;
+    margin: auto;
+    padding: 2.362em; /*1cm*/ 
+    background-color: #0480bf
 }
 
 .blockHeader{
-    font-family: 'Audiowide';
-    text-shadow: 0 0 100px rgb(0, 5, 8);
+    padding-bottom: 1%;
     text-align: center;
-    font-size: 61px;
+    font-family: 'Audiowide';
+    font-size: 3.813em; /* about 61px*/
     color: rgb(1, 10, 16);
+    border-bottom: 0.0325em solid rgba(1, 10, 16, .3);
 } 
 
 smallBlockHeader{
-    font-size: 10px;
+    font-size: 0.165em;
     font-family: 'Audiowide';
-    text-shadow: 0 0 15px rgb(0, 5, 8);
 }
 
 a.sidebar:link{
 	text-decoration: none;
     color: rgb(0, 12, 19);
-	font-weight: 400;
 	-o-transition:.5s;
 	-ms-transition:.5s;
 	-moz-transition:.5s;
 	-webkit-transition:.5s;
 	transition:.5s;
+
 }
 a.sidebar:visited{
-	color: rgb(0, 12, 19);
 	text-decoration: none;
-	font-weight: 400;
+	color: rgb(0, 12, 19);
 	-o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -65,10 +57,8 @@ a.sidebar:visited{
     transition:.5s;
 }
 a.sidebar:hover{
+    text-decoration: none;
 	color: rgba(0, 12, 19, 0.55);
-	text-shadow: 0 0 10px rgb(0, 48, 76);
-	text-decoration: none;
-	font-weight: 400;
 	-o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -76,10 +66,8 @@ a.sidebar:hover{
     transition:.5s;
 }
 a.sidebar:active{
-	color: rgb(0, 29, 47);
 	text-decoration: none;
-	text-shadow: 0 0 1px rgba(0, 48, 76, 10);
-	font-weight: 400;
+    color: rgb(0, 29, 47);
 	border-bottom-width: 2px;
 	-o-transition:.2s;
     -ms-transition:.2s;
@@ -89,56 +77,49 @@ a.sidebar:active{
 }
 
 .sidebar{
-    float: left;
-    font-weight: 400;
+    float: left; 
+    width: 15%;
     font-family: 'Audiowide';
-    text-shadow: 0 0 15px rgb(0, 48, 76);
-    text-align: justify;
     font-size: 24px;
+    text-align: justify;  
     color: rgba(0, 12, 19, 0.55);
 }
 
 .articleBody{
-    margin-top:25px;
-    padding-left: 16%;
+    margin-top: 1.563em;
+    width: 81%;
+    float: right;
+    line-height: 150%;
     text-align: justify;
     color: rgb(0, 36, 57);
-    line-height: 150%;
 }
 
 articleHeader{
     font-weight: 100;
     font-family: 'Audiowide';
-    font-size: 26px;
+    font-size: 1.625em;
     color: rgb(0, 24, 38);
 }
 
 .article{
     padding-left: 0%;
-    font-size: 13px;
+    margin-left: 1.563em;
+    margin-bottom: 1.563em;
+    font-size: 0.813em;
     text-align: left;
-    margin-left: 25px;
-    margin-bottom: 25px;
     font-family: 'Audiowide';
 }    
 
 .footer{
-  width: 1250px;
-  height: 5cm;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: .5cm;
-  margin-bottom: auto;
-  display: block;
-  background-color: inherit; /*rgb(0, 77, 125)*/
+
 }
 
 /* <br> formats */
 
 .blockHeaderBr{
-    font-size: 33px;   
+    font-size: 2.063em;   
 }
 .articleNewLine{
-    font-size: 1px;
+    font-size: 0.063em; /*1px*/
 }
 
