@@ -11,15 +11,16 @@ html{
 }
 
 body{
-    padding-top: 2.362em; /*1cm*/
-    background-color: #22313F/*rgba(0, 77 ,125, 1); /*rgba(0, 77, 125, 1)*/
+    padding: 1em;
+    background-color: #22313F
 }
 
 .block{
-    width: 75%;
-	height: 93.75em;
-    margin: auto;
-    padding: 2.362em; /*1cm*/ 
+	width: 75%;
+	height: 43.75em;
+	margin: auto;
+	padding: 1em;
+	padding-left: 3em;
     background-color: #0480bf
 }
 
@@ -27,7 +28,7 @@ body{
     padding-bottom: 1%;
     text-align: center;
     font-family: 'Audiowide';
-    font-size: 3.813em; /* about 61px*/
+    font-size: 4em;
     color: rgb(1, 10, 16);
     border-bottom: 0.0325em solid rgba(1, 10, 16, .3);
 } 
@@ -47,7 +48,7 @@ smallBlockHeader{
 	transition:.5s;
 
 }
-.sidebar a:visited{
+.sidebar  a:visited{
 	text-decoration: none;
 	color: rgba(0, 12, 19, 0.9);
 	-o-transition:.5s;
@@ -76,19 +77,19 @@ smallBlockHeader{
 }
 
 .sidebar{
-    float: left; 
-    width: 15%;
-	height: 90%;
+	margin-left: -.91em;
+	width: 10%;
     font-family: 'Audiowide';
-    font-size: 24px;
-    text-align: justify;  
-    color: rgba(0, 12, 19, 0.55);	
+	font-size: 24px;
+    color: rgba(0, 12, 19, 0.55);
+	float: left;
 }
 
 .articleBody{
-    margin-top: 1.563em;
-    line-height: 150%;
-    text-align: justify;
+	float: left;
+	width: 82%; 
+    margin-top: 1.5em;
+	line-height: 1.5em;
     color: rgba(0, 36, 57, 1);
 }
 
@@ -96,7 +97,7 @@ articleHeader{
     font-weight: 400;
     font-family: 'Audiowide';
     font-size: 1.625em;
-    color: rgba(0, 12, 19, 0.97);
+    color: rgba(0, 12, 19, 0.97);	
 }
 
 .article b{
@@ -104,10 +105,9 @@ articleHeader{
 }
 
 .article{
-    padding-left: 19%;
-    margin-left: 1.563em;
-    margin-bottom: 1.563em;
-    font-size: 0.813em;
+	margin-left: 1em;
+    margin-bottom: 1.5em;
+    font-size: 0.825em;
     text-align: left;
     font-family: 'Audiowide';
 	text-indent: 1.875em; 
