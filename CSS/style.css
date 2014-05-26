@@ -1,4 +1,3 @@
-
 @charset "UTF-8";
 
 @font-face{
@@ -103,6 +102,43 @@ articleHeader{
 .article b{
 	color: rgba(0, 12, 19, 0.93);
 }
+.article a:link{
+	text-decoration: none;
+	color: #009999;
+	-o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+
+}
+.article a:visited{
+	text-decoration: none;
+	color: #009999;
+	-o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+.article a:hover{
+	text-decoration: none;
+	color: rgba(0, 153, 153, .5);
+	-o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+.article a:active{
+	text-decoration: none;
+	color: rgba(17, 18, 19, .8);
+	-o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
 
 .article{
 	margin-left: 1em;
@@ -112,6 +148,7 @@ articleHeader{
     font-family: 'Audiowide';
 	text-indent: 1.875em; 
 }
+
 
 .footer{
 
@@ -125,4 +162,3 @@ articleHeader{
 .articleNewLine{
     font-size: 0.063em; /*1px*/
 }
-

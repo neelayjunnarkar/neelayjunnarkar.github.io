@@ -1,0 +1,122 @@
+
+@charset "UTF-8";
+
+@font-face{
+  font-family: 'TimesBurner';
+  src: url(../Fonts/Timeburner/timeburner.ttf) format("truetype");
+}
+
+@font-face{
+  font-family: 'HelveticaBold';
+  src: url(../Fonts/Helvetica/HelveticaNeue-Bold.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: 'HelveticaMedium';
+	src: url(../Fonts/Helvetica/HelveticaNeue-Medium.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: 'HelveticaLight';
+	src: url(../Fonts/Helvetica/HelveticaNeue-Light.ttf) format("truetype");
+}
+/*   background-color: #22313F;
+#2B2B2B
+#DE1B1B
+#F6F6F6
+#E9E581
+rgba(255, 255, 255, 0.9);
+*/
+html {
+  height: 1000%;
+}
+
+body {
+    padding: 1em;
+	background: url(../Images/bg-body-black.jpg);
+}
+
+header {
+	position: relative;
+	left: 15%;
+	width: 70%;
+	text-align: center;
+	font-size: 6.5em;
+	color: rgba(0, 95, 168, 0.9);
+	font-family: 'TimesBurner';
+}
+
+header a:link {
+	color: rgba(0, 95, 168, 0.9);
+	font-family: 'TimesBurner';
+	text-decoration: none;
+}
+
+header a:visited {
+	color: rgba(0, 95, 168, 0.9);
+	font-family: 'TimesBurner';
+	text-decoration: none;
+}
+
+header a:hover {
+	color: rgba(0, 95, 168, 0.9);
+	font-family: 'TimesBurner';
+	text-decoration: none;
+}
+
+header a:active {
+	color: rgba(0, 95, 168, 0.9);
+	font-family: 'TimesBurner';
+	text-decoration: none;
+}
+
+.navBar {
+	position: relative;
+	font-family: "TimesBurner";
+	font-weight: 600;
+	font-size: 1.23em;
+	color: rgba(0, 144, 255, 0.5);
+	width: 70%;
+	left: 15%;
+	text-align: center;
+}
+
+nav a:link {
+	display: inline-block;
+	background-color: rgba(43, 43, 43, 0.0);
+	text-decoration: none;
+	color: rgba(204, 203, 203, 0.72);
+	border-radius: .25em;
+	background-color: rgba(9, 9, 9, .10);
+	padding: .2em;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+nav a:visited {
+	display: inline-block;
+	background-color: rgba(9, 9, 9, .10);
+	text-decoration: none;
+	color: rgba(204, 203, 203, 0.72);
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+nav a:hover {
+	display: inline-block;
+	border-radius: .2em;
+	text-decoration: none;
+	color: rgba(204, 203, 203, 0.72);
+	background-color: rgba(9, 9, 9, .30);
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+nav a:active {
+	display: inline-block;
+	background-color: rgba(9, 9, 9, .30);
+	text-decoration: none;
+	color: rgba(204, 203, 203, 0.72);
+	margin-left: 1em;
+	margin-right: 1em;
+}
