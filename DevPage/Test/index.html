@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Test Page</title>
+		<script type = "text/javascript">
+			function draw() {
+				var canvas = document.getElementById('TestCanvas');
+				var ctx = canvas.getContext('2d');
+				
+				//Mouth
+				ctx.fillStyle = "black";
+				ctx.beginPath();
+				ctx.moveTo(200, 100);
+				ctx.arc(100, 100, 100, 0, Math.PI, false);
+				ctx.closePath();
+				ctx.fill();	
+				
+				//Eyes
+				ctx.beginPath();
+				ctx.fillStyle = "black";
+				ctx.moveTo(0, 25);
+				ctx.arc(25, 25, 25, 0, Math.PI*2, true);
+				ctx.closePath();
+				ctx.fill();
+				
+				ctx.beginPath();
+				ctx.fillStyle = "black";
+				ctx.moveTo(150, 25);
+				ctx.arc(175, 25, 25, 0, Math.PI*2, true);
+				ctx.closePath();
+				ctx.fill();
+			}
+		</script>
+		<style type = "text/css">
+			canvas {
+				position: absolute;
+				left: 33%;
+				right: 33%;
+				top: 33%;
+				bottom: 33%;
+			}
+		</style>
+	</head>
+	<body onload = "draw();">
+		<canvas id = 'TestCanvas' width = "200em" height = "200em"></canvas>
+	</body>
+</html>

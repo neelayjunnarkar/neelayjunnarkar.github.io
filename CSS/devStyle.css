@@ -91,6 +91,7 @@ nav a:link {
 	padding: .2em;
 	margin-left: 1em;
 	margin-right: 1em;
+	transition: .2s;
 }
 
 nav a:visited {
@@ -100,6 +101,7 @@ nav a:visited {
 	color: rgba(204, 203, 203, 0.72);
 	margin-left: 1em;
 	margin-right: 1em;
+	transition: 0.2s;
 }
 
 nav a:hover {
@@ -110,13 +112,15 @@ nav a:hover {
 	background-color: rgba(9, 9, 9, .30);
 	margin-left: 1em;
 	margin-right: 1em;
+	transition: 0.15s;
 }
 
 nav a:active {
 	display: inline-block;
-	background-color: rgba(9, 9, 9, .30);
+	background-color: rgba(9, 9, 9, .40);
 	text-decoration: none;
-	color: rgba(204, 203, 203, 0.72);
+	color: rgba(0, 95, 168, 0.99);
 	margin-left: 1em;
 	margin-right: 1em;
+	transition: 0.15s;
 }
