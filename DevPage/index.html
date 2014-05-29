@@ -7,12 +7,13 @@
     <meta name = "description" content = "Neelay Junnarkar's awesome website">
     <meta charset = "UTF-8">
     <script src="/Javascript/setDevCSS.js"></script>
+	<script src="/Javascript/face.js"></script>
     <noscript><link href= "/CSS/devStyle.css" rel="stylesheet" type="text/css"></noscript>
     <script src = "/Javascript/analytics.js"></script>
     <title>Neelay Junnarkar | DevHome </title>
   </head>
   
-  <body>
+  <body onload="drawFace();">
 	  <header>
 		  <a href = "/DevPage/" class = "header">
 		  	<span style = "font-weight: 900; color: rgba(0, 144, 255, 0.8)">N</span>eelay 
@@ -26,6 +27,7 @@
 		  |
 		<a href = "/DevPage/">Home3</a>
 	  </nav>
-	  
+	  <!--The face is a temporary filler image until I make something else-->
+	  <canvas id = 'TestCanvas' width = "200" height = "200"></canvas> 
   </body>
 </html>

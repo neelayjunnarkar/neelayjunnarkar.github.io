@@ -28,7 +28,8 @@
 rgba(255, 255, 255, 0.9);
 */
 html {
-  height: 1000%;
+  height: 100%;
+  width: 100%;
 }
 
 body {
@@ -83,11 +84,10 @@ header a:active {
 
 nav a:link {
 	display: inline-block;
-	background-color: rgba(43, 43, 43, 0.0);
 	text-decoration: none;
 	color: rgba(204, 203, 203, 0.72);
 	border-radius: .25em;
-	background-color: rgba(9, 9, 9, .10);
+	background-color: rgba(9, 9, 9, 0.0);
 	padding: .2em;
 	margin-left: 1em;
 	margin-right: 1em;
@@ -123,4 +123,13 @@ nav a:active {
 	margin-left: 1em;
 	margin-right: 1em;
 	transition: 0.15s;
+}
+
+#TestCanvas {
+	position: relative;
+	margin-top: 7%;
+	left: 42.3%; 
+	right: 42.5%;
+	height: 30%;
+	width: 15%;
 }

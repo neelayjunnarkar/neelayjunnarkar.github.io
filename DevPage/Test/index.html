@@ -1,47 +1,20 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script src="/Javascript/face.js"></script>
 		<title>Test Page</title>
-		<script type = "text/javascript">
-			function draw() {
-				var canvas = document.getElementById('TestCanvas');
-				var ctx = canvas.getContext('2d');
-				
-				//Mouth
-				ctx.fillStyle = "black";
-				ctx.beginPath();
-				ctx.moveTo(200, 100);
-				ctx.arc(100, 100, 100, 0, Math.PI, false);
-				ctx.closePath();
-				ctx.fill();	
-				
-				//Eyes
-				ctx.beginPath();
-				ctx.fillStyle = "black";
-				ctx.moveTo(0, 25);
-				ctx.arc(25, 25, 25, 0, Math.PI*2, true);
-				ctx.closePath();
-				ctx.fill();
-				
-				ctx.beginPath();
-				ctx.fillStyle = "black";
-				ctx.moveTo(150, 25);
-				ctx.arc(175, 25, 25, 0, Math.PI*2, true);
-				ctx.closePath();
-				ctx.fill();
-			}
-		</script>
 		<style type = "text/css">
 			canvas {
 				position: absolute;
 				left: 33%;
-				right: 33%;
 				top: 33%;
+				height: 12.5em;
+				width: 12.5em;
 				bottom: 33%;
 			}
 		</style>
 	</head>
-	<body onload = "draw();">
-		<canvas id = 'TestCanvas' width = "200em" height = "200em"></canvas>
+	<body onload = "drawFace();">
+		<canvas id = 'TestCanvas' width = "200" height = "200"></canvas>
 	</body>
 </html>
