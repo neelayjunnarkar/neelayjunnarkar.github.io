@@ -7,38 +7,28 @@
     <meta name = "description" content = "Neelay Junnarkar's awesome website">
     <meta charset = "UTF-8">
     <script src="/Javascript/setCSS.js"></script>
-    <noscript><link href= "/CSS/style.css" rel="stylesheet" type="text/css"></noscript>
+	<script src="/Javascript/face.js"></script>
+    <noscript><link href= "/CSS/css2.css" rel="stylesheet" type="text/css"></noscript>
     <script src = "/Javascript/analytics.js"></script>
-	<link rel="shortcut icon" href="/Images/celticKnot_temp2.ico">
-    <title>Neelay Junnarkar | Home </title>
+    <title> Home | Neelay Junnarkar </title>
+	<!--<link rel = "shortcut icon" href = "/Images/isjfajs;f.ico">-->
   </head>
-  <body>
-      
-    <div class = "block">
-        
-		<Header>Neelay Junnarkar</Header>
-		
-        <ul class = "sidebar">
-			<li style = "list-style-type: disc"><currentPage>Home</currentPage></li>
-            <li><a href = "/pages/games/" class = "sidebar">Games</a></li>
-        </ul>
-        
-        <div class = "articleBody">
-            <articleHeader>This stuff has all been messed up. checkout the development page
-            	<a href = "/DevPage">DevPage</a>
-            </articleHeader>
-            <articleHeader>Welcome!</articleHeader>
-            <div class = "article">
-                Welcome! This is where I'm supposed to say something amazing but I can't think of anything right now!
-                <br class = "newline">
-                Viruses are bad for computers! There, that's your advice.
-            </div
-           
-        </div>
-        
-    </div> <!--end of block-->
-
-    <div class = "footer">        
-    </div> <!--end of footer-->
+  
+  <body onload="drawFace();">
+	  <header>
+		  <a href = "/DevPage/" class = "header">
+		  	<span style = "font-weight: 900; color: rgba(0, 144, 255, 0.8)">N</span>eelay 
+		  	<span style = "font-weight: 900; color: rgba(0, 144, 255, 0.8)">J</span>unnarkar
+		  </a>
+	  </header>
+	  <nav class = "navBar">
+	  	<a href = "/">Blog</a>
+		  |
+		<a href = "/">Home</a>
+		  |
+		<a href = "/">Code</a>
+	  </nav>
+	  <!--The face is a temporary filler image until I make something else-->
+	  <canvas id = 'TestCanvas' width = "200" height = "200"></canvas> 
   </body>
 </html>
