@@ -158,9 +158,10 @@ nav a:active {
 
 #article {
 	background-color: rgba(9, 9, 9, .2);
-	border-radius: .5em;
+	border-radius: .3em;
 	padding: 1.5em;
 	padding-top: 1.7em;
+	margin: 1em;
 }
 
 #article articleTitle {
