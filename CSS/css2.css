@@ -189,3 +189,44 @@ nav a:active {
 	margin-top: .6em;;
 	text-align: justify;
 }
+
+.article articleTitle a:link {
+	font-family: inherit;
+	color: rgba(200, 200, 200, .9);
+	font-size: inherit;
+	text-align: inherit;
+	width: inherit;
+	margin-top: inherit;
+	line-height: inherit;
+	text-decoration: none;
+}
+.article articleTitle a:visited {
+	font-family: inherit;
+	color: rgba(200, 200, 200, .9);
+	font-size: inherit;
+	text-align: inherit;
+	width: inherit;
+	margin-top: inherit;
+	line-height: inherit;
+	text-decoration: none;
+}
+.article articleTitle a:hover {
+	font-family: inherit;
+	color: rgba(150, 150, 150, .9);
+	font-size: inherit;
+	text-align: inherit;
+	width: inherit;
+	margin-top: inherit;
+	line-height: inherit;
+	text-decoration: none;
+}
+.article articleTitle a:active {
+	font-family: inherit;
+	color: rgba(200, 200, 200, .9);
+	font-size: inherit;
+	text-align: inherit;
+	width: inherit;
+	margin-top: inherit;
+	line-height: inherit;
+	text-decoration: none;
+}
