@@ -13,10 +13,11 @@
       <link href="/CSS/css2.css" rel="stylesheet" type="text/css">
     </noscript>
     <script src="/Javascript/analytics.js"></script>
-    <title>Code | Neelay Junnarkar</title>
+    <title> | Neelay Junnarkar</title>
+    <!--<link rel=" shortcut icon" href=" /Images/isjfajs;f.ico">-->
   </head>
   
-  <body>
+  <body onload="drawFace();">
     <header>
       <a href="/" class="header">
 		  	<span style = "font-weight: 900; color: rgba(0, 144, 255, 0.8)">N</span>eelay 
@@ -24,26 +25,12 @@
 		  </a>
     </header>
     <nav class="navBar">
-      <a href="/art">Art</a>|
-      <a href="/">Home</a>|
-      <a href="#" id = "current">Code</a>
+      <a href="/blog">Blog</a>|
+      <a href="#" id="current">Home</a>|
+      <a href="/code">Code</a>
     </nav>
-    <div class="article">
-      <articleTitle>
-        <a href='follow.html'>The Followers</a>
-      </articleTitle>
-      <br>
-      <br>
-      <div class="articleContent">A simple javascript program in which blocks follow the cursor</div>
-    </div>
-    <div class="article">
-      <articleTitle>
-        <a href='dragdrop.html'>Drag and Drop</a>
-      </articleTitle>
-      <br>
-      <br>
-      <div class="articleContent">A simple javascript program in which you can pick up and move blocks</div>
-    </div>
+    <!--The face is a temporary filler image until I make something else-->
+    <canvas id='TestCanvas' width="200" height="200"></canvas>
   </body>
 
 </html>
