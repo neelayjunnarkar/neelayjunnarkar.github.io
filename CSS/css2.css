@@ -156,7 +156,7 @@ nav a:active {
 	position: relative;
 }
 
-#article {
+.article {
 	background-color: rgba(9, 9, 9, .2);
 	border-radius: .3em;
 	padding: 1.5em;
@@ -164,7 +164,7 @@ nav a:active {
 	margin: 1em;
 }
 
-#article articleTitle {
+.article articleTitle {
 	font-family: 'TimesBurner';
 	color: rgba(200, 200, 200, .9);
 	font-size: 3.2em;
@@ -174,14 +174,14 @@ nav a:active {
 	line-height: .8em;
 }
 
-#article articleSubheader {
+.article articleSubheader {
 	font-family: 'TimesBurner';
 	color: rgba(180, 180, 180, .85);
 	font-size: .75em;
 	margin-left: 3em;
 }
 
-#article .articleContent {
+.article .articleContent {
 	text-indent: 2em;
 	font-family: 'HelveticaLight';
 	font-size: .95em;	
@@ -189,9 +189,3 @@ nav a:active {
 	margin-top: .6em;;
 	text-align: justify;
 }
-
-
-
-
-
-
