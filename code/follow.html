@@ -1,52 +1,49 @@
 <!DOCTYPE html>
-<html id = 'html'>
+<html id='html'>
+  
   <head>
-    <meta charset = "UTF-8">
-    <meta name = "author" content = "Neelay Junnarkar">
-    <meta name = "Keywords" content = "Neelay, Junnarkar, Neelay Junnarkar">
-    <meta name = "description" content = "Neelay Junnarkar's awesome website">
-    <meta charset = "UTF-8">
+    <meta charset="UTF-8">
+    <meta name="author" content="Neelay Junnarkar">
+    <meta name="Keywords" content="Neelay, Junnarkar, Neelay Junnarkar">
+    <meta name="description" content="Neelay Junnarkar's awesome website">
+    <meta charset="UTF-8">
     <script src="/Javascript/setCSS.js"></script>
-	<script src="/Javascript/face.js"></script>
-    <script src = "/Javascript/analytics.js"></script>
+    <script src="/Javascript/face.js"></script>
+    <script src="/Javascript/analytics.js"></script>
     <script src="/Javascript/easeljs-0.8.1.min.js"></script>
-    <script src = "/Javascript/follow.js"></script>
-    <noscript><link href= "/CSS/css2.css" rel="stylesheet" type="text/css"></noscript>
-    
-    <title>Follow | Neelay Junnarkar </title>
+    <script src="/Javascript/follow.js"></script>
+    <noscript>
+      <link href="/CSS/css2.css" rel="stylesheet" type="text/css">
+    </noscript>
+    <title>Follow | Neelay Junnarkar</title>
   </head>
   
   <body onload="follow_init();">
-	  <header id = 'header'>
-		  <a href = "/" class = "header">
+    <header id='header'>
+      <a href="/" class="header">
 		  	<span style = "font-weight: 900; color: rgba(0, 144, 255, 0.8)">N</span>eelay 
 		  	<span style = "font-weight: 900; color: rgba(0, 144, 255, 0.8)">J</span>unnarkar
 		  </a>
-	  </header>
-	  <nav class = "navBar" id = 'nav'>
-	  	<a href = "/blog" >Blog</a>
-		  |
-		<a href = "/" >Home</a>
-		  |
-		<a href = "/code" >Code</a>
-	  </nav>
-	  <div id = 'ContentBody'>
-      <div class = "article" id = 'followers'>
-				<articleTitle id = 'title'>The Followers</articleTitle>
-				<br>
+    </header>
+    <nav class="navBar" id='nav'>
+      <a href="/blog">Blog</a>|
+      <a href="/">Home</a>|
+      <a href="/code">Code</a>
+    </nav>
+    <div id='ContentBody'>
+      <div class="article" id='followers'>
+        <articleTitle id='title'>The Followers</articleTitle>
         <br>
-				<articleSubheader id = 'sub'>Posted on August 7, 2015 by Neelay Junnarkar</articleSubheader>
-				
-				<div class = "articleContent" id ='info'>
-					Here's a little thing I was playing around with as I am learning javascript.<br>
-          The blocks are randomly sized, positioned, and colored (well, the color is from a set).
-          The speed of each block is a function of the distance between the block and the mouse--the speed is the log of the distance, where each block uses a randomized base for the log.
-          The different bases used in the log create the varying speeds. The blocks angle towards the cursor as well. 
-				</div>
-        <canvas id = 'FollowCanvas' width="720" height = "480" ></canvas> 
-		  	</div>
-		  		  
-	           
+        <br>
+        <articleSubheader id='sub'>Posted on August 7, 2015 by Neelay Junnarkar</articleSubheader>
+        <div class="articleContent" id='info'>Here's a little thing I was playing around with as I am learning javascript.
+          <br>The blocks are randomly sized, positioned, and colored (well, the color is from a set). The speed of each block is a function
+          of the distance between the block and the mouse--the speed is the log of the distance, where each block uses a randomized
+          base for the log. The different bases used in the log create the varying speeds. The blocks angle towards the cursor as well.</div>
+        <canvas
+        id='FollowCanvas' width="720" height="480"></canvas>
+      </div>
     </div>
   </body>
+
 </html>
