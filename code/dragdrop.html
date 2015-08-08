@@ -6,17 +6,17 @@
     <meta name = "Keywords" content = "Neelay, Junnarkar, Neelay Junnarkar">
     <meta name = "description" content = "Neelay Junnarkar's awesome website">
     <meta charset = "UTF-8">
-    <script src/Javascript/setCSS.js"></script>
+    <script src="/Javascript/setCSS.js"></script>
 	<script src="/Javascript/face.js"></script>
     <script src = "/Javascript/analytics.js"></script>
     <script src="/Javascript/easeljs-0.8.1.min.js"></script>
-    <script src = "/Javascript/follow.js"></script>
-    <noscript><link href= "/CSS/css2.css" rel="stylesheet" type="text/css"></noscript>
+    <script src = "/Javascript/draganddrop.js"></script>
+    <noscript><link href= "../CSS/css2.css" rel="stylesheet" type="text/css"></noscript>
     
-    <title>Follow | Neelay Junnarkar </title>
+    <title>Drag n Drop | Neelay Junnarkar </title>
   </head>
   
-  <body onload="follow_init();">
+  <body onload="dragdrop_init();">
 	  <header id = 'header'>
 		  <a href = "/DevPage/" class = "header">
 		  	<span style = "font-weight: 900; color: rgba(0, 144, 255, 0.8)">N</span>eelay 
@@ -31,18 +31,17 @@
 		<a href = "#" >Code</a>
 	  </nav>
 	  <div id = 'ContentBody'>
-      <div class = "article" id = 'followers'>
-				<articleTitle id = 'title'>The Followers</articleTitle>
-				<br>
+      <div class = "article" id = 'dragdrop'>
+				<articleTitle id = 'title'>Drag and Drop</articleTitle>
+				<br><br>
 				<articleSubheader id = 'sub'>Posted on August 7, 2015 by Neelay Junnarkar</articleSubheader>
 				
 				<div class = "articleContent" id ='info'>
-					Here's a little thing I was playing around with as I am learning javascript.<br>
-          The blocks are randomly sized, positioned, and colored (well, the color is from a set).
-          The speed of each block is a function of the distance between the block and the mouse--the speed is the log of the distance, where each block uses a randomized base for the log.
-          The different bases used in the log create the varying speeds. The blocks angle towards the cursor as well. 
+					This is a quick thing I made while I am learning javascript.<br>
+          The blocks are randomly sized, positioned, and colored (although the colors are from a set).
+          The blocks are movable by clicking on them and moving them.
 				</div>
-        <canvas id = 'FollowCanvas' width="720" height = "480" ></canvas> 
+        <canvas id = 'DragDropCanvas' width="720" height = "480" ></canvas> 
 		  	</div>
 		  		  
 	           
