@@ -148,7 +148,7 @@ nav a:active {
 }
 
 
-#blogBody {
+.articles {
 	height: 100%;
 	width: 70%;
 	margin: auto;
@@ -264,4 +264,15 @@ nav a:active {
 	margin-top: inherit;
 	text-align: inherit;
 	text-decoration: none;	
+}
+
+center {
+	display: block;
+	text-align: -webkit-center;
+}
+
+.image {
+	padding: 9px;
+	background-color: rgba(9, 9, 9, .4);
+	border-radius: 5px;
 }

@@ -8,15 +8,14 @@
     <meta name="description" content="Neelay Junnarkar's awesome website">
     <meta charset="UTF-8">
     <script src="/Javascript/setCSS.js"></script>
-    <script src="/Javascript/face.js"></script>
     <noscript>
       <link href="/CSS/css2.css" rel="stylesheet" type="text/css">
     </noscript>
     <script src="/Javascript/analytics.js"></script>
-    <title>Home | Neelay Junnarkar</title>
+    <title>Art | Neelay Junnarkar</title>
   </head>
   
-  <body onload="drawFace();">
+  <body>
     <header>
       <a href="/" class="header">
 		  	<span style = "font-weight: 900; color: rgba(0, 144, 255, 0.8)">N</span>eelay 
@@ -24,12 +23,25 @@
 		  </a>
     </header>
     <nav class="navBar">
-      <a href="/art" id = "current">Art</a>|
+      <a href="#" id="current">Art</a>|
       <a href="/">Home</a>|
       <a href="/code">Code</a>
     </nav>
-    <!--The face is a temporary filler image until I make something else-->
-    <canvas id='TestCanvas' width="200" height="200"></canvas>
+    <div class='articles'>
+      <div class="article">
+        <articleTitle>Tree</articleTitle>
+        <br>
+        <br>
+        <articleSubheader>Posted on August 8, 2015 by Neelay Junnarkar</articleSubheader>
+        <div class="articleContent">This is an image I drew a few months ago. It's a tree.
+          <br>
+          <br>
+          <center >
+            <img src="/Images/tree.png" alt="picture of a tree" width=480 height=480 class = "image">
+          </center>
+        </div>
+      </div>
+    </div>
   </body>
 
 </html>
