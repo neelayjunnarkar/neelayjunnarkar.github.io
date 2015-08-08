@@ -173,23 +173,6 @@ nav a:active {
 	margin-top: 1em;
 	line-height: .8em;
 }
-
-.article articleSubheader {
-	font-family: 'TimesBurner';
-	color: rgba(180, 180, 180, .85);
-	font-size: .75em;
-	margin-left: 3em;
-}
-
-.article .articleContent {
-	text-indent: 2em;
-	font-family: 'HelveticaLight';
-	font-size: .95em;	
-	color: rgba(200, 200, 200, .8);
-	margin-top: .6em;;
-	text-align: justify;
-}
-
 .article articleTitle a:link {
 	font-family: inherit;
 	color: rgba(200, 200, 200, .9);
@@ -229,4 +212,56 @@ nav a:active {
 	margin-top: inherit;
 	line-height: inherit;
 	text-decoration: none;
+}
+
+.article articleSubheader {
+	font-family: 'TimesBurner';
+	color: rgba(180, 180, 180, .85);
+	font-size: .75em;
+	margin-left: 3em;
+}
+
+.article .articleContent {
+	text-indent: 2em;
+	font-family: 'HelveticaLight';
+	font-size: .95em;	
+	color: rgba(200, 200, 200, .8);
+	margin-top: .6em;;
+	text-align: justify;
+}
+.article .articleContent a:link {
+	text-indent: inherit;
+	font-family: inherit;
+	font-size: inherit;	
+	color: rgba(150, 150, 150, .8);
+	margin-top: inherit;
+	text-align: inherit;
+	text-decoration: none;	
+}
+.article .articleContent a:visited {
+	text-indent: inherit;
+	font-family: inherit;
+	font-size: inherit;	
+	color: rgba(150, 150, 150, .8);
+	margin-top: inherit;
+	text-align: inherit;
+	text-decoration: none;	
+}
+.article .articleContent a:hover {
+	text-indent: inherit;
+	font-family: inherit;
+	font-size: inherit;	
+	color: rgba(100, 100, 100, .8);
+	margin-top: inherit;
+	text-align: inherit;
+	text-decoration: none;	
+}
+.article .articleContent a:active {
+	text-indent: inherit;
+	font-family: inherit;
+	font-size: inherit;	
+	color: rgba(150, 150, 150, .8);
+	margin-top: inherit;
+	text-align: inherit;
+	text-decoration: none;	
 }
