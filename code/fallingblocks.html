@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html id='html'>
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Neelay Junnarkar">
+    <meta name="Keywords" content="Neelay, Junnarkar, Neelay Junnarkar">
+    <meta name="description" content="Neelay Junnarkar's awesome website">
+    <meta charset="UTF-8">
+    <script src="/Javascript/setCSS.js"></script>
+    <noscript>
+      <link href="/CSS/css2.css" rel="stylesheet" type="text/css">
+    </noscript>
+    <script src="/Javascript/analytics.js"></script>
+	<script src="/Javascript/easeljs-0.8.1.min.js"></script>
+    <script src="/Javascript/FallingBlocks/vector2d.js"></script>
+    <script src="/Javascript/FallingBlocks/polygon.js"></script>
+    <script src="/Javascript/FallingBlocks/rect.js"></script>
+    <script src="/Javascript/FallingBlocks/entity.js"></script>
+    <script src="/Javascript/FallingBlocks/MobileEntity.js"></script>
+    <script src="/Javascript/FallingBlocks/player.js"></script>
+    <script src="/Javascript/FallingBlocks/enemy.js"></script>
+    <script src="/Javascript/FallingBlocks/enemymaster.js"></script>
+    <script src="/Javascript/FallingBlocks/game.js"></script>
+    <script src="/Javascript/FallingBlocks/gameover.js"></script>
+    <script src="/Javascript/FallingBlocks/fallingblocks.js"></script>
+    <title>Falling Blocks | Neelay Junnarkar</title>
+  </head>
+  
+  <body onload="init();">
+    <header id='header'>
+      <a href="/" class="header">
+		  	<span style = "font-weight: 900; color: rgba(0, 144, 255, 0.8)">N</span>eelay 
+		  	<span style = "font-weight: 900; color: rgba(0, 144, 255, 0.8)">J</span>unnarkar
+		  </a>
+    </header>
+    <nav class="navBar" id='nav'>
+      <a href="/art">Art</a>|
+      <a href="/">Home</a>|
+      <a href="/code">Code</a>
+    </nav>
+
+    <div class='articles'>
+      <div class="article" id ='fallingblocks'>
+        <articleTitle id='title'>Falling Blocks</articleTitle>
+        <br>
+        <br>
+        <articleSubheader>Posted on August 11, 2015 by Neelay Junnarkar</articleSubheader>
+        <div class="articleContent" id ='info'>
+          This is a game I first wrote 2 years ago in my freshman year as my first graphical program when I began learning Java.
+          Uptil that point, I had only been doing command-line programs in C++.
+          Since then, I have implemented this in other languages I have learned in which I have done graphics (just C++, actually).
+          <br>The point of this game is to avoid the randomly-positioned and randomly-sized blocks which fall from above.
+          <br><br>Controls:
+          Keyboard Arrow Keys
+        </div>
+        <br>
+        <canvas id ='Canvas' width = 720 height=480></canvas>
+      </div>
+    </div>
+
+  </body>
+
+</html>
