@@ -22,6 +22,13 @@ function Game(width, height, stage) {
     this.textscore.textBaseline = 'alphabetic'
     stage.addChild(this.textscore)
 
+    this.highscore = 0
+    this.texthighscore = new createjs.Text('HighScore: '+this.highscore, '20px Calibri', red)
+    this.texthighscore.x = 20
+    this.texthighscore.y = 60
+    this.texthighscore.textBaseline = 'alphabetic'
+    stage.addChild(this.texthighscore)
+    
     var prevlives = this.player.lives
     this.update = function (stage) {
         this.enemymaster.update(stage)
@@ -29,7 +36,14 @@ function Game(width, height, stage) {
         
         if (prevlives !== this.player.lives) 
             this.textlives.text = 'Lives: '+this.player.lives
-        this.textscore.text = 'Score: '+(Date.now()-this.initms)
+            
+        var currscore = Date.now()-this.initms
+        this.textscore.text = 'Score: '+(currscore)
+        
+        if (currscore > this.highscore) {
+            this.highscore = currscore
+            this.texthighscore.text = 'HighScore: '+this.highscore;            
+        }
             
         if (this.player.lives <= 0)
             return Screens.OVER
