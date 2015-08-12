@@ -42,6 +42,8 @@ function init() {
             }
         }
 
+        stage.setChildIndex(game.textlives, stage.getNumChildren()-1)
+        
         stage.update();
     })
 
