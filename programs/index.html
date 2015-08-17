@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Programs | Neelay Junnarkar</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href='/CSS/overall.css' type="text/css" />
+    <script src="/JS/analytics.js"></script>
+
+    <script src="/JS/article-content.js"></script>
+
+    <script src="/JS/GameLib/easeljs-0.8.1.min.js"></script>
+    <script src="/JS/GameLib/vector2d.js"></script>
+    <script src="/JS/GameLib/polygon.js"></script>
+    <script src="/JS/GameLib/Rect.js"></script>
+    <script src="/JS/GameLib/entity.js"></script>
+    <script src="/JS/GameLib/MobileEntity.js"></script>
+
+    <script src="/JS/FallingBlocks/player.js"></script>
+    <script src="/JS/FallingBlocks/enemy.js"></script>
+    <script src="/JS/FallingBlocks/enemymaster.js"></script>
+    <script src="/JS/FallingBlocks/game.js"></script>
+    <script src="/JS/FallingBlocks/gameover.js"></script>
+    <script src="/JS/FallingBlocks/fallingblocks.js"></script>
+
+    <script src="/JS/follow.js"></script>
+    <script src="/JS/draganddrop.js"></script>
+</head>
+<body onload="setArticleDispsNone(); centerImgs(); dragdrop_init(); follow_init(); fallingblocks_init();">
+    <div class="wrapper">
+        <center>
+            <header><a href="/"><initial>N</initial>eelay <initial>J</initial>unnarkar</a></header>
+            <nav>
+                <navitem><a href="/artwork/">Artwork</a></navitem>
+                <navitem><a href="/">Home</a></navitem>
+                <navitem class="current"><a href="/programs/">Programs</a></navitem>
+            </nav>
+            <div class="articles">
+
+                <!--Falling Blocks-->
+                <div class="article" id="Falling Blocks">
+                    <div class="article-title">
+                        Falling Blocks
+                        <div class="subtitle-icon" onclick="toggleContent('Falling Blocks'); toggleFallingBlocksDisplay();">
+                            <a href="#"><img src="/Imgs/eye.png" /></a>
+                        </div>
+                    </div>
+
+                    <div class="article-subtitle">
+                        <text>Posted on August 11, 2015 by <a href="/about/">Neelay Junnarkar</a></text>
+                    </div>
+                    <div class="article-summary">
+                        A javascript game in which you attempt to dodge blocks which fall down towards you
+                    </div>
+                    <div class="article-content">
+                        <p>
+                            This is a game I first wrote 2 years ago in my freshman year as my first graphical program when I began learning Java.
+                            Uptil that point, I had only been doing command-line programs in C++. Since then, I have implemented this in other languages I have learned in which I have done graphics (just C++, actually)
+                        </p>
+                        <p>
+                            The point of this game is to avoid the randomly-positioned and randomly-sized blocks which accelerate towards the ground from above.
+                        </p>
+                        <br />
+                        <p>
+                            Controls:
+                            Keyboard Arrow Keys
+                        </p>
+                        <canvas id='Falling Blocks Canvas' width="720" height="480"></canvas>
+                    </div>
+                </div> <!--end Falling Blocks-->
+
+                <!--Followers-->
+                <div class="article" id="Followers">
+                    <div class="article-title">
+                        Followers
+                        <div class="subtitle-icon" onclick="toggleContent('Followers'); toggleFollowersDisplayed();">
+                            <a href="#"><img src="/Imgs/eye.png" /></a>
+                        </div>
+                    </div>
+
+                    <div class="article-subtitle">
+                        <text>Posted on August 7, 2015 by <a href="/about/">Neelay Junnarkar</a></text>
+                    </div>
+                    <div class="article-summary">
+                        A simple javascript program in which blocks follow the cursor
+                    </div>
+                    <div class="article-content">
+                        <p>
+                            Here's a little thing I was playing around with as I am learning Javascript.
+                        </p>
+                        <p>
+                            The blocks are randomly sized, positioned, and colored (well, the color is from a set). The speed of each block is a function
+                            of the distance between the block and the mouse--the speed is the log of the distance, where each block uses a randomized
+                            base for the log. The different bases used in the log create the varying speeds. The blocks angle towards the cursor as well.
+                        </p>
+                        <canvas id='Followers Canvas' width="720" height="480"></canvas>
+                    </div>
+                </div> <!--end Followers-->
+
+                <!--Drag and Drop-->
+                <div class="article" id="Drag and Drop">
+                    <div class="article-title">
+                        Drag and Drop
+                        <div class="subtitle-icon" onclick="toggleContent('Drag and Drop')">
+                            <a href="#"><img src="/Imgs/eye.png" /></a>
+                        </div>
+                    </div>
+
+                    <div class="article-subtitle">
+                        <text>Posted on August 7, 2015 by <a href="/about/">Neelay Junnarkar</a></text>
+                    </div>
+                    <div class="article-summary">
+                        A simple javascript program in which you can pick up and move blocks
+                    </div>
+                    <div class="article-content">
+                        <p>
+                            This is a quick thing I made while I am learning javascript.
+                        </p>
+                        <p>
+                            The blocks are randomly sized, positioned, and colored (although the colors are from a set). The blocks are movable by clicking
+                            on them and moving them.
+                        </p>
+                        <canvas id='Drag and Drop Canvas' width="720" height="480"></canvas>
+                    </div>
+                </div> <!--end Drag and Drop-->
+
+
+            </div>
+        </center>
+        <div class="push"></div>
+    </div>
+    <div class="footer">
+        <div class="copyright">
+            ©2015 Neelay Junnarkar
+        </div>
+        <div class="info">
+            <div class="footer-icon">
+                <a href="https://github.com/neelayjunnarkar" target="_blank"><img src="/Imgs/github.png" /></a>
+            </div>
+            <a href="/privacyterms/">Privacy Terms</a>&nbsp;&nbsp;&nbsp;<a href="/about/">About</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,90 +1,135 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-  
-  <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Neelay Junnarkar">
-    <meta name="Keywords" content="Neelay, Junnarkar, Neelay Junnarkar">
-    <meta name="description" content="Neelay Junnarkar's awesome website">
-    <meta charset="UTF-8">
-    <script src="/Javascript/setCSS.js"></script>
-    <script src="/Javascript/face.js"></script>
-    <noscript>
-      <link href="/CSS/css2.css" rel="stylesheet" type="text/css">
-    </noscript>
-    <script src="/Javascript/analytics.js"></script>
-    <title>Home | Neelay Junnarkar</title>
-  </head>
-  
-  <body>
-    <header>
-      <a href="/" class="header">
-		  	<span style = "font-weight: 900; color: rgba(0, 144, 255, 0.8)">N</span>eelay 
-		  	<span style = "font-weight: 900; color: rgba(0, 144, 255, 0.8)">J</span>unnarkar
-		  </a>
-    </header>
-    <nav class="navBar">
-      <a href="/art">Art</a>|
-      <a href="#" id = "current">Home</a>|
-      <a href="/code">Code</a>
-    </nav>
-    
-    <!--Blog Body-->
-    <div class = "articles">
-      
-      
-      <!--Added Falling Blocks-->
-      <div class="article">
-        <articleTitle>Added New Game:<a href='/code/fallingblocks.html'>Falling Blocks</a></articleTitle>
-        <br>
-        <br>
-        <articleSubheader>Posted on August 11, 2015 by Neelay Junnarkar</articleSubheader>
-        <div class="articleContent">
-          This is a javascript version of Falling Blocks, a game I first programmed 2 years ago in Java when I was in 9th grade. The original can be found <a href='https://github.com/neelayjunnarkar/Game_FallingBlocks'>here on Github</a>
-          <br>The object of this game is to dodge blocks that are falling--hence the name.
-        </div>
-      </div>
-      
-      
-      <!--Uploaded Art -->
-      <div class="article">
-        <articleTitle>Uploaded Art</articleTitle>
-        <br>
-        <br>
-        <articleSubheader>Posted on August 8, 2015 by Neelay Junnarkar</articleSubheader>
-        <div class="articleContent">
-          Only a day since the last post but I suppose I'm only uploading pictures right now so it doesn't really count as anything new.<br>
-          Well, if you didn't guess from the previous sentence, I just posted a bunch of <a href = '/art'>pictures</a>.
-          Two of them, the porridge-related ones, I made a long time (3 years) ago.
-          The other 2 I made this year: The Ocean Waves during the early part and The Tree during the beginning of Summer.
-        </div>
-      </div>
-      
-      <!--New JS Prgs-->
-      <div class="article">
-        <articleTitle>New Programs in Javascript</articleTitle>
-        <br>
-        <br>
-        <articleSubheader>Posted on August 7, 2015 by Neelay Junnarkar</articleSubheader>
-        <div class="articleContent">
-          So, it has been a long time since I posted anything on the blog. Over a year since my last post...the first post on this site.<br>
-          Well, now I have finally modified this website. I decided to learn javascript a few days ago because I was going to make the multiplayer card game BS Poker (Bait). <br>
-          However, it turns out I cannot run serverside code on Github pages. Oh well, but I am still continuing to learn javascript.<br>
-          Today, I uploaded my first programs in javascript...Head over to <a href = '/code'>Code</a> to check them out!
-        </div>
-      </div>
-      
-      <!--First Post-->
-      <div class="article">
-        <articleTitle>The New Website and Blog!!!</articleTitle>
-        <br>
-        <br>
-        <articleSubheader>Posted on June 23, 2014 by Neelay Junnarkar</articleSubheader>
-        <div class="articleContent">Yay! The New Website! Well, if this one turns out to be anything like the last one (hopefully, probably not), get ready
-          for awesome blog posts explaining why the site is in shambles! Yay!</div>
-      </div>
-      
-    </div>
-  </body>
+<head>
+    <title>Neelay Junnarkar</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href='/CSS/overall.css' type="text/css" />
+    <script src="/JS/analytics.js"></script>
 
+    <script src="/JS/article-content.js"></script>
+</head>
+<body onload="setArticleDispsBlock(); centerImgs();">
+    <div class="wrapper">
+        <center>
+            <header><a href="/"><initial>N</initial>eelay <initial>J</initial>unnarkar</a></header>
+            <nav>
+                <navitem><a href="/artwork/">Artwork</a></navitem>
+                <navitem class="current"><a href="#">Home</a></navitem>
+                <navitem><a href="/programs/">Programs</a></navitem>
+            </nav>
+            <div class="articles">
+
+                <!--Added New Game: Falling Blocks-->
+                <div class="article" id="Added New Game: Falling Blocks">
+                    <div class="article-title">
+                        Added New Game: <a href="/programs/">Falling Blocks</a>
+                        <div class="subtitle-icon" onclick="toggleContent('Added New Game: Falling Blocks')">
+                            <a href="#"><img src="/Imgs/eye.png" /></a>
+                        </div>
+                    </div>
+
+                    <div class="article-subtitle">
+                        <text>Posted on August 11, 2015 by <a href="/about/">Neelay Junnarkar</a></text>
+                    </div>
+                    <div class="article-content" id="content">
+                        <p>
+                            This is a javascript version of Falling Blocks, a game I first programmed 2 years ago in Java when I was in 9th grade. 
+                            The original can be found <a target="_blank" href='https://github.com/neelayjunnarkar/Game_FallingBlocks'>here on Github</a>
+                        </p>
+                        <p>
+                            The objective of this game is to dodge blocks that are falling--hence the name.
+                        </p>
+
+                    </div>
+                </div> <!--end Added New Game: Falling Blocks-->
+
+                <!--Uploaded Art-->
+                <div class="article" id="Uploaded Art">
+                    <div class="article-title">
+                        Uploaded Art
+                        <div class="subtitle-icon" onclick="toggleContent('Uploaded Art')">
+                            <a href="#"><img src="/Imgs/eye.png" /></a>
+                        </div>
+                    </div>
+
+                    <div class="article-subtitle">
+                        <text>Posted on August 8, 2015 by <a href="/about/">Neelay Junnarkar</a></text>
+                    </div>
+                    <div class="article-content" id="content">
+                        <p>
+                            Only a day since the last post but I suppose I'm only uploading pictures right now so it doesn't really count as anything new.
+                        </p>
+                        <p>
+                            Well, if you didn't guess from the previous sentence, I just posted a bunch of <a href="/artwork/">pictures</a>.
+                            Two of them, the porridge-related ones, I made a long time (3 years) ago.
+                            The other 2 I made this year: The Ocean Waves during the early part and The Tree during the beginning of Summer.
+                        </p>
+
+                    </div>
+                </div> <!--end Uploaded Art-->
+
+                <!--New Programs in Javascript-->
+                <div class="article" id="New Programs in Javascript">
+                    <div class="article-title">
+                        New Programs in Javascript
+                        <div class="subtitle-icon" onclick="toggleContent('New Programs in Javascript')">
+                            <a href="#"><img src="/Imgs/eye.png" /></a>
+                        </div>
+                    </div>
+
+                    <div class="article-subtitle">
+                        <text>Posted on August 7, 2015 by <a href="/about/">Neelay Junnarkar</a></text>
+                    </div>
+                    <div class="article-content" id="content">
+                        <p>
+                            So, it has been a long time since I posted anything on the blog. Over a year since my last post...the first post on this site.
+                        </p>
+                        <p>
+                            Well, now I have finally modified this website. I decided to learn javascript a few days ago because I was going to make the multiplayer card game BS Poker (Bait).
+                            However, it turns out I cannot run serverside code on Github pages.
+                        </p>
+                        <p>
+                            Oh well, but I am still continuing to learn javascript.
+                            Today, I uploaded my first programs in javascript...Head over to <a href='/programs/'>Programs</a> to check them out!
+                        </p>
+                    </div>
+                </div> <!--end New Programs in Javascript-->
+
+                <!--The New Website and Blog!!!-->
+                <div class="article" id="The New Website and Blog!!!">
+                    <div class="article-title">
+                        The New Website and Blog!!!
+                        <div class="subtitle-icon" onclick="toggleContent('The New Website and Blog!!!')">
+                            <a href="#"><img src="/Imgs/eye.png" /></a>
+                        </div>
+                    </div>
+
+                    <div class="article-subtitle">
+                        <text>Posted on June 23, 2014 by <a href="/about/">Neelay Junnarkar</a></text>
+                    </div>
+                    <div class="article-content">
+                        <p>
+                            Yay! The New Website! Well, if this one turns out to be anything like the last one (hopefully, probably not), get ready
+                            for awesome blog posts explaining why the site is in shambles! Yay!
+                        </p>
+                       
+                    </div>
+                </div> <!--end The New Website and Blog!!!-->
+
+            </div>
+        </center>
+        <div class="push"></div>
+    </div>
+    <div class="footer">
+        <div class="copyright">
+            ©2015 Neelay Junnarkar
+        </div>
+        <div class="info">
+            <div class="footer-icon">
+                <a href="https://github.com/neelayjunnarkar" target="_blank"><img src="/Imgs/github.png" /></a>
+            </div>
+            <a href="/privacyterms/">Privacy Terms</a>&nbsp;&nbsp;&nbsp;<a href="/about/">About</a>
+        </div>
+    </div>
+</body>
 </html>

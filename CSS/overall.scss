@@ -1,0 +1,96 @@
+﻿@font-face {
+    font-family: 'TimesBurner';
+    src: url(../Fonts/TimeBurner/timeburner.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'HelveticaBold';
+    src: url(../Fonts/Helvetica/HelveticaNeue-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'HelveticaMedium';
+    src: url(../Fonts/Helvetica/HelveticaNeue-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'HelveticaLight';
+    src: url(../Fonts/Helvetica/HelveticaNeue-Light.ttf) format("truetype");
+}
+
+$max-width: 1295px;
+$page-padding: 1em;
+$footer-height: 3em;
+
+* {
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    font-size: medium;
+    padding: $page-padding;
+    background: url(/Imgs/bg-body-black.jpg);
+}
+
+.wrapper {
+    min-height: 100%;
+    margin: 0 auto 0-$footer-height;
+}
+
+center {
+    width: 100%;
+    text-align: center;
+}
+
+@mixin center-block {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon {
+
+    @mixin light($percent) {
+        -webkit-filter: brightness($percent);
+        filter: brightness($percent);
+    }
+
+    a:link, visited {
+        @include light(100%);
+        transition: .1s;
+    }
+
+    a:hover {
+        @include light(75%);
+        transition: .1s;
+    }
+
+    a:active {
+        @include light(60%);
+        transition: .1s;
+    }
+}
+
+.subtitle-icon {
+    @extend .icon;
+    float: right;
+    height: 11px;
+    max-height: 11px;
+    line-height: 11px;
+}
+
+.footer-icon {
+    @extend .icon;
+    float: left;
+    margin-right: 1em;
+}
+
+@import '_header.scss';
+@import '_nav.scss';
+@import '_article.scss';
+@import '_footer.scss';

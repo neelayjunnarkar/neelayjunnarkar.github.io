@@ -62,7 +62,6 @@ function Game(width, height, stage) {
     this.start = function () {
         stage.removeChild(this.player)
         stage.removeChild(this.killer)
-
         this.player.x = width / 2
         this.player.y = height / 2
         this.player.lives = 5

@@ -1,0 +1,116 @@
+﻿$article-radius: 5px;
+$article-color: rgba(203, 203, 210, 1);
+$article-subtitle-color: rgba(180, 180, 180, 1);
+$article-bg-color: change-color(desaturate(darken($navitem-divider-color, 22%), 90%), $alpha: .7);
+$article-hover-color: rgba(150, 150, 150, 1);
+$article-blue: rgb(1, 98, 174);
+$aricle-padding: 1em;
+
+.articles {
+    @include center-block;
+    max-width: $max-width;
+    margin-top: 3em;
+
+    .article {
+        background-color: $article-bg-color;
+        border-radius: $article-radius;
+        text-align: left;
+        padding: .1em $aricle-padding .1em $aricle-padding; //bottom padding is increased by article-content bottom padding to 1em
+        margin-bottom: 1em;
+
+        .article-title {
+            font-family: 'TimesBurner';
+            color: $article-color;
+            font-size: 3.2em;
+            margin-top: .1em;
+
+            a:link, a:visited {
+                color: $article-color;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: $article-hover-color;
+                text-decoration: none;
+            }
+
+            a:active {
+                color: $article-blue;
+                text-decoration: none;
+            }
+        }
+        //end article-title
+        .article-subtitle {
+            font-family: 'TimesBurner';
+            color: $article-subtitle-color;
+            margin-bottom: 1em;
+            padding-left: 1em;
+            clear: left;
+
+            a:link, a:visited {
+                color: $article-subtitle-color;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: $article-hover-color;
+                text-decoration: none;
+            }
+
+            a:active {
+                color: $article-blue;
+                text-decoration: none;
+            }
+
+            text {
+                padding-left: 2em;
+            }
+        }
+        //end article-subtitle
+
+        .article-summary {
+            font-family: 'HelveticaLight';
+            color: $article-color;
+            line-height: 1.8em;
+            margin-bottom: .1em;
+            margin-top: .1em;
+        }
+        //end article-summary
+
+        .article-content {
+            font-family: 'HelveticaLight';
+            color: $article-color;
+            line-height: 1.8em;
+            padding-bottom: $aricle-padding - .1em;
+
+            p {
+                text-indent: 2em;
+
+                a:link, a:visited {
+                    color: desaturate($article-blue, 20%);
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    color: darken(desaturate($article-blue, 20%), 5%);
+                    text-decoration: none;
+                }
+
+                a:active {
+                    color: darken(desaturate($article-blue, 20%), 10%);
+                    text-decoration: none;
+                }
+            }
+            //end p
+            .image {
+                padding: 9px;
+                background-color: $article-bg-color;
+                border-radius: 5px;
+                vertical-align: middle;
+            }
+        }
+        //end article-content
+    }
+    //end article
+}
+//end article-titles

@@ -1,0 +1,73 @@
+﻿
+$navitem-divider-color: rgb(1, 98, 174);
+$navitem-bg-color: desaturate(darken($navitem-divider-color, 22%), 80%);
+$navitem-border-sz: 2px;
+$navitem-border-r: 3px;
+$navitem-max-width: 6em;
+$nav-color: rgba(203, 203, 210, 1);
+
+nav {
+    @include center-block;
+    max-width: $max-width;
+    margin-top: .5em;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+    font-family: 'TimesBurner';
+    font-weight: 600;
+}
+
+@mixin navitem-a {
+    color: $nav-color;
+    text-decoration: none;
+    flex-grow: 1;
+    transition: .1s;
+}
+
+navitem {
+    @include center-block;
+    border-radius: $navitem-border-r;
+    border-right: $navitem-border-sz solid $navitem-divider-color;
+    border-left: $navitem-border-sz solid $navitem-divider-color;
+    max-width: $navitem-max-width;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+
+    a:link, a:visited {
+        @include navitem-a;
+        background-color: transparentize($navitem-bg-color, .5);
+    }
+
+    a:hover {
+        @include navitem-a;
+        background-color: darken($navitem-bg-color, 3%);
+    }
+
+    a:active {
+        @include navitem-a;
+        background-color: darken($navitem-bg-color, 5%);
+        color: $navitem-divider-color;
+    }
+}
+//end nav-item
+
+nav .current {
+
+    a:link, a:visited {
+        background-color: darken($navitem-bg-color, 3%);
+    }
+
+    a:hover {
+        @include navitem-a;
+        background-color: none;
+    }
+
+    a:active {
+        @include navitem-a;
+        background-color: darken($navitem-bg-color, 5%);
+        color: $navitem-divider-color;
+    }
+}
+//end nav .current
