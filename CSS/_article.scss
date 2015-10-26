@@ -74,6 +74,21 @@ $aricle-padding: 1em;
             line-height: 1.8em;
             margin-bottom: .1em;
             margin-top: .1em;
+
+            center a:link, center a:visited {
+                color: darken($article-color, 15%);
+                text-decoration: none;
+            }
+
+           center  a:hover {
+                color: darken($article-color, 25%);
+                text-decoration: none;
+            }
+
+           center  a:active {
+                color: darken($article-color, 35%);
+                text-decoration: none;
+            }
         }
         //end article-summary
 

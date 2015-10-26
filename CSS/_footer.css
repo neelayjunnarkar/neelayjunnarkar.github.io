@@ -54,7 +54,9 @@ center {
   float: right;
   height: 11px;
   max-height: 11px;
-  line-height: 11px; }
+  line-height: 11px;
+  margin-right: 0px;
+  margin-left: .5em; }
 
 .footer-icon {
   float: left;
@@ -183,6 +185,15 @@ nav .current a:active {
       line-height: 1.8em;
       margin-bottom: .1em;
       margin-top: .1em; }
+      .articles .article .article-summary center a:link, .articles .article .article-summary center a:visited {
+        color: #a2a2af;
+        text-decoration: none; }
+      .articles .article .article-summary center a:hover {
+        color: #878797;
+        text-decoration: none; }
+      .articles .article .article-summary center a:active {
+        color: #6d6d7e;
+        text-decoration: none; }
     .articles .article .article-content {
       font-family: 'HelveticaLight';
       color: #cbcbd2;
@@ -226,3 +237,4 @@ nav .current a:active {
 
 .push {
   height: 3em; }
+
