@@ -29,15 +29,21 @@ var eye = 'mgs/eye.png'
 function setEyes() {
     for (var i = 0; i < document.getElementsByClassName('article').length; ++i) {
         var article = document.getElementsByClassName('article')[i];
+        if (article === document.getElementById('Programs Statement'))
+            continue;
         var icon = article.children[0].children[0];
         var img = icon.children[0].children[0];
         img.src = '/Imgs/eye.png'
     }
 }
 
+//have to make it so that doesnt try and switch id Program Statements
 function setEyesCrossed() {
     for (var i = 0; i < document.getElementsByClassName('article').length; ++i) {
         var article = document.getElementsByClassName('article')[i];
+        if (article === document.getElementById('Programs Statement'))
+            continue;
+        
         var icon = article.children[0].children[0];
         var img = icon.children[0].children[0];
         img.src = '/Imgs/eye-crossed.png';

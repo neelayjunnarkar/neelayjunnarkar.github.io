@@ -1,7 +1,7 @@
 ﻿var green = '#BEF202'
 var red = '#F03C02'
 function Game(width, height, stage) {
-    this.ground = new Entity(new Rect(new Vector2d(width / 2 + 15, height), new Vector2d(width, 30), 'DeepSkyBlue'))
+    this.ground = new Entity(new Rect(new Vector2d(width / 2  + 15 , height), new Vector2d(width, 30), 'DeepSkyBlue'))
 
     this.player = new Player(new Rect(new Vector2d(width / 2, height/2), new Vector2d(24, 24), green), 5, this.ground)
     this.enemymaster = new EnemyMaster(5/152*width, 1, this.player, this.ground)
@@ -34,7 +34,7 @@ function Game(width, height, stage) {
     this.update = function (stage) {
         this.enemymaster.update(stage)
         this.player.update();
-        
+
         if (prevlives !== this.player.lives) 
             this.textlives.text = 'Lives: '+this.player.lives
             

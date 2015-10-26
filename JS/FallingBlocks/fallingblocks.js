@@ -52,7 +52,6 @@ function fallingblocks_init() {
             } else if (state === Screens.OVER) {
                 state = gameover.state
                 if (state === Screens.GAME) {
-                    console.log('hi')
                     game.start()
                     gameover.hide(stage)
                 }

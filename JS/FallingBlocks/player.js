@@ -80,6 +80,7 @@ function Player(polygon, initlives, ground) {
 
         //Update position
         this.translate(this.velocity)
+       
         if (this.bbintersects(this.ground)) {
             this.velocity = new Vector2d(this.velocity.x, 0)
             this.y = this.ground.y - this.ground.origindisp.y - this.origindisp.y
