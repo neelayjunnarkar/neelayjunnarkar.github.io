@@ -80,7 +80,15 @@ function Player(polygon, initlives, ground) {
 
         //Update position
         this.translate(this.velocity)
-       
+        
+        //wraparound movement
+        if (this.x - this.dim.x/2 < 0) {
+            this.x = this.ground.x + this.ground.dim.x / 2 - this.dim.x / 2;
+        } else if (this.x + this.dim.x / 2 > this.ground.x + this.ground.dim.x / 2) {
+            this.x = 0 + this.dim.x / 2;
+        }
+        
+
         if (this.bbintersects(this.ground)) {
             this.velocity = new Vector2d(this.velocity.x, 0)
             this.y = this.ground.y - this.ground.origindisp.y - this.origindisp.y
