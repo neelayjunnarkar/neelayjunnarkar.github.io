@@ -52,12 +52,18 @@ function setEyesCrossed() {
 
 function toggleEye(id) {
     var article = document.getElementById(id);
-    var icon = article.children[0].children[0];
-    var img = icon.children[0].children[0];
-    if (img.src.substr(img.src.length - 11) === eyecrossed)
-        img.src = '/Imgs/eye.png'
-    else if (img.src.substr(img.src.length - 11) === eye)
-        img.src = '/Imgs/eye-crossed.png'
+    var article_title = article.children[0];
+    var img;
+    for (var i = 0; i < article_title.children.length; ++i) {
+        if (article_title.children[i].classList.contains('subtitle-icon')) {
+            img = article_title.children[i].children[0].children[0];
+            if (img.src.substr(img.src.length - 11) === eyecrossed)
+                img.src = '/Imgs/eye.png'
+            else if (img.src.substr(img.src.length - 11) === eye)
+                img.src = '/Imgs/eye-crossed.png'
+        }
+    }
+
 }
 
 function toggleContent(id) {
