@@ -69,7 +69,7 @@ header {
   max-width: 1295px;
   color: rgba(0, 95, 168, 0.9);
   border-radius: 3px;
-  font-family: 'TimesBurner'; }
+  font-family: 'Merriweather'; }
   header a:link, header a:visited, header a:hover, header a:active {
     color: rgba(0, 95, 168, 0.9);
     text-decoration: none; }
@@ -82,11 +82,11 @@ nav {
   margin-right: auto;
   max-width: 1295px;
   margin-top: .5em;
-  font-size: 1.5em;
+  font-size: 1.45em;
   display: flex;
   flex-direction: row;
-  font-family: 'TimesBurner';
-  font-weight: 600; }
+  font-family: 'Merriweather';
+  font-weight: 400; }
 
 navitem {
   margin-left: auto;
@@ -149,10 +149,11 @@ nav .current a:active {
     padding: 0.1em 1em 0.1em 1em;
     margin-bottom: 1em; }
     .articles .article .article-title {
-      font-family: 'TimesBurner';
+      font-family: 'Merriweather';
       color: #cbcbd2;
-      font-size: 3.2em;
-      margin-top: .1em; }
+      font-size: 2.5em;
+      margin-top: .1em;
+      font-weight: 300; }
       .articles .article .article-title a:link, .articles .article .article-title a:visited {
         color: #cbcbd2;
         text-decoration: none; }
@@ -163,7 +164,7 @@ nav .current a:active {
         color: #0162ae;
         text-decoration: none; }
     .articles .article .article-subtitle {
-      font-family: 'TimesBurner';
+      font-family: 'Source Sans Pro';
       color: #b4b4b4;
       margin-bottom: 1em;
       padding-left: 1em;
@@ -180,7 +181,7 @@ nav .current a:active {
       .articles .article .article-subtitle text {
         padding-left: 2em; }
     .articles .article .article-summary {
-      font-family: 'HelveticaLight';
+      font-family: 'Source Sans Pro';
       color: #cbcbd2;
       line-height: 1.8em;
       margin-bottom: .1em;
@@ -195,14 +196,14 @@ nav .current a:active {
         color: #6d6d7e;
         text-decoration: none; }
     .articles .article .article-content {
-      font-family: 'HelveticaLight';
+      font-family: 'Source Sans Pro';
       color: #cbcbd2;
       line-height: 1.8em;
       padding-bottom: 0.9em; }
       .articles .article .article-content p {
         text-indent: 2em; }
         .articles .article .article-content p a:link, .articles .article .article-content p a:visited {
-          color: #12609d;
+          color: #13609d;
           text-decoration: none; }
         .articles .article .article-content p a:hover {
           color: #105286;
@@ -222,7 +223,7 @@ nav .current a:active {
   max-width: 1295px;
   color: #cbcbd2;
   height: 3em;
-  font-family: 'HelveticaLight'; }
+  font-family: 'Source Sans Pro'; }
   .footer a:link, .footer a:visited, .footer a:hover {
     color: #cbcbd2;
     text-decoration: none; }

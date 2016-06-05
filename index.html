@@ -8,7 +8,7 @@
 
     <script src="/JS/article-content.js"></script>
 </head>
-<body onload="setArticleDispsBlock(); centerImgs();">
+<body onload="setArticleDispsNone(); centerImgs();">
     <div class="wrapper">
         <center>
             <header><a href="/"><initial>N</initial>eelay <initial>J</initial>unnarkar</a></header>
@@ -19,6 +19,41 @@
             </nav>
             <div class="articles">
 
+                <!--Keyboard Layouts-->
+                <div class="article" id="Keyboard Layouts">
+                    <div class="article-title" onclick="toggleContent('Keyboard Layouts')">
+                        Keyboard Layouts
+                        <div class="subtitle-icon">
+                            <a><img src="/Imgs/eye.png" /></a>
+                        </div>
+                    </div>
+                    <div class="article-subtitle">
+                        <text>Posted on June 5, 2016 by <a href="/about/">Neelay Junnarkar</a></text>
+                    </div>
+                    <div class="article-summary">
+                        Personal keyboard layouts that give access to accents and tilde, as well as mathematical operators and symbols. <span onclick="toggleContent('Keyboard Layouts')">Show more...</span>
+                    </div>
+                    <div class="article-content" id="content">
+                        <p>Never again shall you use '--' instead of '—'!</p>
+                        <p>
+                            I recently created a keyboard layout (using Microsoft Keyboard Layout Creator 1.4) for Windows so that I could easily use non-english symbols. 
+                            Primarily, I wanted to be able to type for my Spanish class without having to keep switching between the US English Keyboard and the Latin America Spanish Keyboard.
+                            I also added mathematical symbols such as π, λ, θ, ∑, and equality comparison symbols.
+                            Symbols are accessible using the alt-gr key.
+                            Some of the locations of symbols are based on how macs place the symbols, but I changed much. For example, in my kebyoard, one types the   ́    (accent) after the letter instead of before.
+                        </p>
+                        <p>
+                            To install this keyboard, go to <a target="_blank" href="https://github.com/neelayjunnarkar/KeyboardLayouts">this repository</a>, download the zip file ('njkeyboa.zip') in the repository, and run the setup exe.
+                        </p>
+                        <center>
+                            <img src="/Imgs/NJKeyboa.jpg" alt="picture of a nondescript long-neck dionsaur" width="792" height="240" class="image" />
+                            <img src="/Imgs/NJKeyboaAltGr.jpg" alt="picture of a nondescript long-neck dionsaur" width="792" height="240" class="image" />
+                            <img src="/Imgs/NJKeyboaShftAltGr.jpg" alt="picture of a nondescript long-neck dionsaur" width="792" height="240" class="image" />
+                        </center>
+                        <span onclick="toggleContent('Keyboard Layouts')">Show less...</span>
+                    </div> 
+                </div> <!--end Keyboard Layouts-->
+
                 <!--Added New Game: Falling Blocks-->
                 <div class="article" id="Released Version 2 of NetLib">
                     <div class="article-title" onclick="toggleContent('Released Version 2 of NetLib')">
@@ -27,9 +62,11 @@
                             <a ><img src="/Imgs/eye.png" /></a>
                         </div>
                     </div>
-
                     <div class="article-subtitle">
                         <text>Posted on October 25, 2015 by <a href="/about/">Neelay Junnarkar</a></text>
+                    </div>
+                    <div class="article-summary">
+                        Networking library written in C++ using c-sockets. <span onclick="toggleContent('Released Version 2 of NetLib')">Show more...</span>
                     </div>
                     <div class="article-content" id="content">
                         <p>
@@ -43,7 +80,7 @@
                         <p>
                             The code can be found at <a target="_blank" href="https://github.com/neelayjunnarkar/Networking">my Networking repository on Github</a>. Check it out!
                         </p>
-
+                        <span onclick="toggleContent('Released Version 2 of NetLib')">Show less...</span>
                     </div>
                 </div> <!--end Added New Game: Falling Blocks-->
 
@@ -55,9 +92,11 @@
                             <a><img src="/Imgs/eye.png" /></a>
                         </div>
                     </div>
-
                     <div class="article-subtitle">
                         <text>Posted on August 11, 2015 by <a href="/about/">Neelay Junnarkar</a></text>
+                    </div>
+                    <div class="article-summary">
+                        Addition of javascript game in which the player avoids falling blocks. <span onclick="toggleContent('Added New Game: Falling Blocks')">Show more...</span>
                     </div>
                     <div class="article-content" id="content">
                         <p>
@@ -67,7 +106,7 @@
                         <p>
                             The objective of this game is to dodge blocks that are falling--hence the name.
                         </p>
-
+                        <span onclick="toggleContent('Added New Game: Falling Blocks')">Show less...</span>
                     </div>
                 </div> <!--end Added New Game: Falling Blocks-->
 
@@ -79,9 +118,11 @@
                             <a><img src="/Imgs/eye.png" /></a>
                         </div>
                     </div>
-
                     <div class="article-subtitle">
                         <text>Posted on August 8, 2015 by <a href="/about/">Neelay Junnarkar</a></text>
+                    </div>
+                    <div class="article-summary">
+                        More art has been posted. <span onclick="toggleContent('Uploaded Art')">Show more...</span>
                     </div>
                     <div class="article-content" id="content">
                         <p>
@@ -92,7 +133,7 @@
                             Two of them, the porridge-related ones, I made a long time (3 years) ago.
                             The other 2 I made this year: The Ocean Waves during the early part and The Tree during the beginning of Summer.
                         </p>
-
+                        <span onclick="toggleContent('Uploaded Art')">Show less...</span>
                     </div>
                 </div> <!--end Uploaded Art-->
 
@@ -104,9 +145,11 @@
                             <a><img src="/Imgs/eye.png" /></a>
                         </div>
                     </div>
-
                     <div class="article-subtitle">
                         <text>Posted on August 7, 2015 by <a href="/about/">Neelay Junnarkar</a></text>
+                    </div>
+                    <div class="article-summary">
+                        Playing around with javascript. <span onclick="toggleContent('New Programs in Javascript')">Show more...</span>
                     </div>
                     <div class="article-content" id="content">
                         <p>
@@ -120,6 +163,7 @@
                             Oh well, but I am still continuing to learn javascript.
                             Today, I uploaded my first programs in javascript...Head over to <a href='/programs/'>Programs</a> to check them out!
                         </p>
+                        <span onclick="toggleContent('New Programs in Javascript')">Show less...</span>
                     </div>
                 </div> <!--end New Programs in Javascript-->
 
@@ -131,16 +175,18 @@
                             <a><img src="/Imgs/eye.png" /></a>
                         </div>
                     </div>
-
                     <div class="article-subtitle">
                         <text>Posted on June 23, 2014 by <a href="/about/">Neelay Junnarkar</a></text>
+                    </div>
+                    <div class="article-summary">
+                        First post! <span onclick="toggleContent('The New Website and Blog!!!')">Show more...</span>
                     </div>
                     <div class="article-content">
                         <p>
                             Yay! The New Website! Well, if this one turns out to be anything like the last one (hopefully, probably not), get ready
                             for awesome blog posts explaining why the site is in shambles! Yay!
                         </p>
-                       
+                        <span onclick="toggleContent('The New Website and Blog!!!')">Show less...</span>
                     </div>
                 </div> <!--end The New Website and Blog!!!-->
 

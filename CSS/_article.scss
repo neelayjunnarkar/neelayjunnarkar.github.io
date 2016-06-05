@@ -19,10 +19,11 @@ $aricle-padding: 1em;
         margin-bottom: 1em;
 
         .article-title {
-            font-family: 'TimesBurner';
+            font-family: 'Merriweather'; //'TimesBurner'
             color: $article-color;
-            font-size: 3.2em;
+            font-size: 2.5em;//3.2em;
             margin-top: .1em;
+            font-weight: 300; //
 
             a:link, a:visited {
                 color: $article-color;
@@ -41,7 +42,7 @@ $aricle-padding: 1em;
         }
         //end article-title
         .article-subtitle {
-            font-family: 'TimesBurner';
+            font-family: 'Source Sans Pro';//Merriweather';//'TimesBurner';
             color: $article-subtitle-color;
             margin-bottom: 1em;
             padding-left: 1em;
@@ -69,7 +70,7 @@ $aricle-padding: 1em;
         //end article-subtitle
 
         .article-summary {
-            font-family: 'HelveticaLight';
+            font-family: 'Source Sans Pro'; //'HelveticaLight';
             color: $article-color;
             line-height: 1.8em;
             margin-bottom: .1em;
@@ -93,7 +94,7 @@ $aricle-padding: 1em;
         //end article-summary
 
         .article-content {
-            font-family: 'HelveticaLight';
+            font-family:  'Source Sans Pro';//'HelveticaLight';
             color: $article-color;
             line-height: 1.8em;
             padding-bottom: $aricle-padding - .1em;

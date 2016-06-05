@@ -10,11 +10,11 @@ nav {
     @include center-block;
     max-width: $max-width;
     margin-top: .5em;
-    font-size: 1.5em;
+    font-size: 1.45em;
     display: flex;
     flex-direction: row;
-    font-family: 'TimesBurner';
-    font-weight: 600;
+    font-family: 'Merriweather';//  'TimesBurner';
+    font-weight: 400;//600;
 }
 
 @mixin navitem-a {
