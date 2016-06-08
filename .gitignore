@@ -1,1 +1,3 @@
 *.config
+/compilerconfig.json.defaults
+/compilerconfig.json

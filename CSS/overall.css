@@ -1,18 +1,50 @@
 ﻿@font-face {
-  font-family: 'TimesBurner';
-  src: url(../Fonts/TimeBurner/timeburner.ttf) format("truetype"); }
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../Fonts/sourcesanspro-light-webfont.eot?#iefix") format("embedded-opentype"), url("../Fonts/sourcesanspro-light-webfont.woff2") format("woff2"), url("../Fonts/sourcesanspro-light-webfont.woff") format("woff"), url("../Fonts/sourcesanspro-light-webfont.ttf") format("truetype"); }
 
 @font-face {
-  font-family: 'HelveticaBold';
-  src: url(../Fonts/Helvetica/HelveticaNeue-Bold.ttf) format("truetype"); }
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../Fonts/sourcesanspro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../Fonts/sourcesanspro-regular-webfont.woff2") format("woff2"), url("../Fonts/sourcesanspro-regular-webfont.woff") format("woff"), url("../Fonts/sourcesanspro-regular-webfont.ttf") format("truetype"); }
 
 @font-face {
-  font-family: 'HelveticaMedium';
-  src: url(../Fonts/Helvetica/HelveticaNeue-Medium.ttf) format("truetype"); }
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../Fonts/sourcesanspro-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../Fonts/sourcesanspro-italic-webfont.woff2") format("woff2"), url("../Fonts/sourcesanspro-italic-webfont.woff") format("woff"), url("../Fonts/sourcesanspro-italic-webfont.ttf") format("truetype"); }
 
 @font-face {
-  font-family: 'HelveticaLight';
-  src: url(../Fonts/Helvetica/HelveticaNeue-Light.ttf) format("truetype"); }
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../Fonts/sourcesanspro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../Fonts/sourcesanspro-bold-webfont.woff2") format("woff2"), url("../Fonts/sourcesanspro-bold-webfont.woff") format("woff"), url("../Fonts/sourcesanspro-bold-webfont.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../Fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../Fonts/merriweather-light-webfont.woff2") format("woff2"), url("../Fonts/merriweather-light-webfont.woff") format("woff"), url("../Fonts/merriweather-light-webfont.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../Fonts/merriweather-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../Fonts/merriweather-regular-webfont.woff2") format("woff2"), url("../Fonts/merriweather-regular-webfont.woff") format("woff"), url("../Fonts/merriweather-regular-webfont.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../Fonts/merriweather-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../Fonts/merriweather-italic-webfont.woff2") format("woff2"), url("../Fonts/merriweather-italic-webfont.woff") format("woff"), url("../Fonts/merriweather-italic-webfont.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../Fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../Fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../Fonts/merriweather-bold-webfont.woff") format("woff"), url("../Fonts/merriweather-bold-webfont.ttf") format("truetype"); }
 
 * {
   margin: 0; }
