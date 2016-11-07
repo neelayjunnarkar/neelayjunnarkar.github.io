@@ -32,6 +32,48 @@
                     </div>
                 </div> <!--End Website Statement-->
 
+                <!--The Cosmic Falcon and Random Projects-->
+                <div class="article" id="The Cosmic Falcon and Random Projects">
+                    <div class="article-title" onclick="toggleContent('The Cosmic Falcon and Random Projects')">
+                        The Cosmic Falcon and Random Projects
+                        <div class="subtitle-icon">
+                            <a><img src="/Imgs/eye.png" /></a>
+                        </div>
+                    </div>
+                    <div class="article-subtitle">
+                        <text>Posted on October 24, 2016 by <a href="/about/">Neelay Junnarkar</a></text>
+                    </div>
+                    <div class="article-summary">
+                        The creation of The Cosmic Falcon and my work on some small random projects <span onclick="toggleContent('The Cosmic Falcon and Random Projects')">Show more...</span>
+                    </div>
+                    <div class="article-content" id="content">
+                        <p>
+                            Near the end of the last school year (≈April/May), my friend and I started The Cosmic Falcon, an organization for our joint programming projects.
+                            Our first project has been to update and improve our physics simulator tha twe had created some time ago. Who knows where we'll go from here.
+                        </p>
+                        <p>
+                            Other than Cosmic Falcon projects, I've been working on several of my own little projects lately (since finishing up my Command Argument Parser). 
+                            I ended up just creating a 'RandomProjects' repository in Github to house them all. So far I have programmed Conway's Game of Life, which most of my friends had created in Intro to Java, a maze generator, and a pathfinder.
+                            To check out these projects more, head over to the 'Programs' page.
+                        </p>
+                        <p>
+                            Other than these programs, I've also written a bot for the Facebook Messenger Soccer game. 
+                            I would create a full-on post about this in the Programs page, but I've been using it to play some tricks on my friends, so I'll just leave this information here where no one will see it. 
+                            The algorithm for my bot is effectively to detect the location of the ball, track its motion, and click on it (automatically).
+                            I am using OpenCV to detect the ball, and the Windows API for mouse input and output as well as for screen capture.
+                            Because screen-capturing and ball-detection is pretty slow, I have had to make some significant optimizations on this program.
+                            The lag has also made it so that I have to predict where the ball will have moved to in the time between taking a screen-capture and actually clicking.
+                            To do this I logged the y-values of the ball while it rose and fell, used Excel to find the 2nd degree polynomial trendline, and took the second derivative of that equation to find the acceleration of the ball.
+                            I then used this acceleration in the equation y_f = y_0 + v_0 * t + 1/2 * a * t^2.
+                            The v_0 I used was simply distance the ball covered in between screen captures divided by the time in between screen captures.
+                            This bot is not perfect yet and I have been continuing to try and improve on it. Right now the highest score is ≈1300. 
+                            Not shabby, but I really want to test if I can overflow whatever datatype Facebook uses to store the score and maybe get a negative number or something. 
+                            Negative one here I come!
+                        </p>
+                        <span onclick="toggleContent('The Cosmic Falcon and Random Projects')">Show less...</span>
+                    </div>
+                </div> <!--end The Cosmic Falcon and Random Projects-->
+
                 <!--Keyboard Layouts-->
                 <div class="article" id="Keyboard Layouts">
                     <div class="article-title" onclick="toggleContent('Keyboard Layouts')">
