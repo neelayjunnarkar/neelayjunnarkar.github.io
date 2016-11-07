@@ -97,7 +97,7 @@ center {
 header {
   margin-left: auto;
   margin-right: auto;
-  font-size: 5.5em;
+  font-size: 4em;
   max-width: 1295px;
   color: rgba(0, 95, 168, 0.9);
   border-radius: 3px;
@@ -114,7 +114,7 @@ nav {
   margin-right: auto;
   max-width: 1295px;
   margin-top: .5em;
-  font-size: 1.45em;
+  font-size: 1.2em;
   display: flex;
   flex-direction: row;
   font-family: 'Merriweather';
@@ -183,7 +183,7 @@ nav .current a:active {
     .articles .article .article-title {
       font-family: 'Merriweather';
       color: #cbcbd2;
-      font-size: 2.5em;
+      font-size: 1.75em;
       margin-top: .1em;
       font-weight: 300; }
       .articles .article .article-title a:link, .articles .article .article-title a:visited {

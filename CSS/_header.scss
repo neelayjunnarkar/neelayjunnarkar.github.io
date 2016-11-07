@@ -5,7 +5,7 @@ $header-radius: 3px;
 
 header {
     @include       center-block;
-    font-size:     5.5em;
+    font-size:     4em;
     max-width:     $max-width;
     color:         $header-color;
     border-radius: $header-radius;
