@@ -54,7 +54,211 @@
                         </p>
                     </div>
                 </div> <!--End Programs Statement-->
+                <!--Pathfinder-->
+                <div class="article" id="Pathfinder">
+                    <div class="article-title" onclick="toggleContent('Pathfinder')">
+                        Pathfinder
+                        <div class="subtitle-icon">
+                            <a><img src="/Imgs/eye.png" /></a>
+                        </div>
+                        <div class="subtitle-icon">
+                            <a target="_blank" href="https://github.com/neelayjunnarkar/RandomProjects/tree/master/Pathfinding">
+                                <img src="/Imgs/github.png" />
+                            </a>
+                        </div>
+                    </div>
 
+                    <div class="article-subtitle">
+                        <text>Posted on October 24, 2016 by <a href="/about/">Neelay Junnarkar</a></text>
+                    </div>
+                    <div class="article-summary">
+                        A C++ implementation of A*, Dijstra's algorithm, and breadth-first search. <span onclick="toggleContent('Pathfinder')">Show more...</span>
+                    </div>
+                    <div class="article-content">
+                        <p>
+                            Well, after creating a maze generator, I clearly had to make a program to solve the mazes. So here it is.
+                        </p>
+                        <p>
+                            I implemented several path finding algorithms including breath-first search, Dijkstra's algorithm, and A*.
+                            The breadth-first algorithm is the simplest and simply searches, starting at the start point, adjacent cells until it finds the goal.
+                            Dijkstra's algorithm searches the graph (the grid in this case) more intelligenty by prioritizing adjacent cells that have less weight, or effectively can be considered to be 'closer'.
+                            A* is an improvement upon Dijkstra's and uses its knowledge of the position of the goal to help increase performance.
+                        </p>
+                        <p>
+                            Example in a random-weight grid with some obstacles.
+                        </p>
+                        <p>
+                            Legend:
+                            <ul>
+                                <li>Green Cell - Start</li>
+                                <li>Red Cell - Goal</li>
+                                <li>Green-tinted Cells - cells that have not been visited</li>
+                                <li>Red-tinted Cells - cells that have been visited</li>
+                                <li>Weight is represented by shades of gray: the lighter the cell, the less weight it is</li>
+                                <li>Black Cells - not nodes in the graph (intraversable)</li>
+                                <li>Blue Small Squares - Path</li>
+                            </ul>
+                            <center>
+                                <img src="/Imgs/PathfindingExample_WeightedGrid.png" alt="Pathfinding example on weighted grid" width="480" height="480" class="image" />
+                            </center>
+                        </p>
+                        <p>
+                            And now here is an example of the pathfinder operating on a 51x51 maze. Same legend as before (but all cells are equally weighted in the maze).
+                            <center>
+                                <img src="/Imgs/PathfindingExample_51x51Maze.PNG" alt="Pathfinding example on weighted grid" width="480" height="480" class="image" />
+                            </center>
+                        </p>
+
+                        <span onclick="toggleContent('Pathfinder')">Show less...</span>
+                    </div>
+                </div><!--End Pathfinder-->
+                <!--Maze Generator-->
+                <div class="article" id="Maze Generator">
+                    <div class="article-title" onclick="toggleContent('Maze Generator')">
+                        Maze Generator
+                        <div class="subtitle-icon">
+                            <a><img src="/Imgs/eye.png" /></a>
+                        </div>
+                        <div class="subtitle-icon">
+                            <a target="_blank" href="https://github.com/neelayjunnarkar/RandomProjects/tree/master/MazeGenerator">
+                                <img src="/Imgs/github.png" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="article-subtitle">
+                        <text>Posted on October 21, 2016 by <a href="/about/">Neelay Junnarkar</a></text>
+                    </div>
+                    <div class="article-summary">
+                        A maze generator in C++. <span onclick="toggleContent('Maze Generator')">Show more...</span>
+                    </div>
+                    <div class="article-content">
+                        <p>
+                            This maze generator uses the backtracking algorithm in which a head node goes out from the starting cell in a random path until it hits a dead end.
+                            At this point, the head node back tracks until it reaches a cell from which it can create a viable offshoot from the main path.
+                            I am considering modifying my program so there are several head nodes, and thus several paths being created at the same time.
+                            This would address the problem of the backtracking algorithm that it tends to create simple long chains with easily identifiable offshoots.
+                        </p>
+                        <p>
+                            Example 101x101 maze generated. Green is the starting cell (top right ish) and red is the goal cell (top left ish).
+                            Starting and ending points are randomized, but are guaranteed to be the pair of points with the largest distance (not displacement) between them.
+                            <center>
+                                <img src="/Imgs/ExampleMaze2_101x101.PNG" alt="picture of the Ship " class="image" />
+                            </center>
+                        </p>
+                        <span onclick="toggleContent('Maze Generator')">Show less...</span>
+                    </div>
+                </div><!--End Maze Generator-->
+                <!--Conways Game of Life-->
+                <div class="article" id="Conways Game of Life">
+                    <div class="article-title" onclick="toggleContent('Conways Game of Life')">
+                        Conways Game of Life
+                        <div class="subtitle-icon">
+                            <a><img src="/Imgs/eye.png" /></a>
+                        </div>
+                        <div class="subtitle-icon">
+                            <a target="_blank" href="https://github.com/neelayjunnarkar/RandomProjects/tree/master/ConwaysGameOfLife">
+                                <img src="/Imgs/github.png" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="article-subtitle">
+                        <text>Posted on October 19, 2016 by <a href="/about/">Neelay Junnarkar</a></text>
+                    </div>
+                    <div class="article-summary">
+                        A C++ implementation of Conway's Game of Life. <span onclick="toggleContent('Conways Game of Life')">Show more...</span>
+                    </div>
+                    <div class="article-content">
+                        <p>
+                            Conway's Game of Life is a simulation of interacting cells. Each cell in the grid can either be dead or alive, and the state of the cell in the next step in time is determined by 4 rules:
+                            <ol>
+                                <li>Any live cell with fewer than two live neighbours dies</li>
+                                <li>Any live cell with two or three live neighbours lives on to the next generation</li>
+                                <li>Any live cell with more than three live neighbours dies</li>
+                                <li>Any dead cell with exactly three live neighbours becomes a live cell</li>
+                            </ol>
+                        </p><br />
+                        <p>
+                            One of the interesting parts of my implementation is a vector of functions, in which each function is a rule. This allows for easy customization and hot-swapping of rules.
+                        </p><br />
+                        <p>
+                            Some of my friends said I couldn't write Conway's Game of Life in under an hour. I said I would be able to do it in under 45 minutes.
+                        </p>
+                        <p>
+                            I was wrong, but I still got it in under 1 hour at 57 minutes.
+                        </p>
+                        <span onclick="toggleContent('Conways Game of Life')">Show less...</span>
+                    </div>
+                </div><!--End Conways Game of Life-->
+                <!--Command Argument Parser-->
+                <div class="article" id="Command Argument Parser">
+                    <div class="article-title" onclick="toggleContent('Command Argument Parser')">
+                        Command Argument Parser
+                        <div class="subtitle-icon">
+                            <a><img src="/Imgs/eye.png" /></a>
+                        </div>
+                        <div class="subtitle-icon">
+                            <a target="_blank" href="https://github.com/neelayjunnarkar/CmdArgParser">
+                                <img src="/Imgs/github.png" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="article-subtitle">
+                        <text>Posted on September 24, 2016 by <a href="/about/">Neelay Junnarkar</a></text>
+                    </div>
+                    <div class="article-summary">
+                        A C++ parser for arguments to main. <span onclick="toggleContent('Command Argument Parser')">Show more...</span>
+                    </div>
+                    <div class="article-content">
+                        <p>
+                            This is a parser I wrote that allows me easily take in environment arguments. I have found a need for this in some of my vision and networking programs.
+                        </p>
+                        <p>
+                            This single-file header-only library allows simple parsing of 3 types of arguments: boolean, labeled, and positional.
+                            For boolean arguments, my parser simply checks whether the flag is passed or not.
+                            For labeled arguments, my parser returns the values that come after a flag such as "--coordinates".
+                            Position arguments are a simpler version of labeled arguments meant only for the most basic input.
+                            For these, my parser returns the values that are at specific indices
+                        </p>
+                        <p>
+                            Examples at <a href="https://github.com/neelayjunnarkar/CmdArgParser">my github repository</a>
+                        </p>
+
+                        <span onclick="toggleContent('Command Argument Parser')">Show less...</span>
+                    </div>
+                </div><!--End Command Argument Parser-->
+                <!--Tic Tac Toe AI-->
+                <div class="article" id="Tic Tac Toe AI">
+                    <div class="article-title" onclick="toggleContent('Tic Tac Toe AI')">
+                        Tic Tac Toe AI
+                        <div class="subtitle-icon">
+                            <a><img src="/Imgs/eye.png" /></a>
+                        </div>
+                        <div class="subtitle-icon">
+                            <a target="_blank" href="https://github.com/neelayjunnarkar/TicTacToeAI">
+                                <img src="/Imgs/github.png" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="article-subtitle">
+                        <text>Posted on July 28, 2016 by <a href="/about/">Neelay Junnarkar</a></text>
+                    </div>
+                    <div class="article-summary">
+                        An AI for Tic Tac Toe. <span onclick="toggleContent('Tic Tac Toe AI')">Show more...</span>
+                    </div>
+                    <div class="article-content">
+                        <p>
+                            This AI is based off an algorithm that my team wrote during a programming competition.
+                            This algorithm only detects if there is a <bold>sure</bold> victory.
+                            The AI will play randomly if there is no sure win
+                        </p>
+
+                        <span onclick="toggleContent('Tic Tac Toe AI')">Show less...</span>
+                    </div>
+                </div><!--End Tic Tac Toe AI-->
                 <!--Networking-->
                 <div class="article" id="Networking">
                     <div class="article-title" onclick="toggleContent('Networking')">
@@ -77,7 +281,7 @@
                     </div>
                     <div class="article-content">
                         <p>
-                            A cross-platform Networking Library written in C/C++ using csockets. This libary supports Windows and linux. 
+                            A cross-platform Networking Library written in C/C++ using csockets. This libary supports Windows and linux.
                         </p>
                         <p>
                             I originally wrote this library for my robotics team in late 2014, but have since worked on it on my own.
@@ -85,7 +289,6 @@
                         <span onclick="toggleContent('Networking')">Show less...</span>
                     </div>
                 </div><!--end Networking-->
-
                 <!--Falling Blocks-->
                 <div class="article" id="Falling Blocks">
                     <div class="article-title" onclick="toggleContent('Falling Blocks'); toggleFallingBlocksDisplay();">
@@ -109,7 +312,7 @@
                     <div class="article-content">
                         <p>
                             This is a game I first wrote 2 years ago in my freshman year as my first graphical program when I began learning Java.
-                            Uptil that point, I had only been doing command-line programs in C++. Since then, I have implemented this in other languages I have learned in which I have done graphics 
+                            Uptil that point, I had only been doing command-line programs in C++. Since then, I have implemented this in other languages I have learned in which I have done graphics
                         </p>
                         <p>
                             The point of this game is to avoid the randomly-positioned and randomly-sized blocks which accelerate towards the ground from above.
@@ -123,7 +326,6 @@
                         <span onclick="toggleContent('Falling Blocks'); toggleFallingBlocksDisplay();">Show less...</span>
                     </div>
                 </div> <!--end Falling Blocks-->
-
                 <!--Followers-->
                 <div class="article" id="Followers">
                     <div class="article-title" onclick="toggleContent('Followers'); toggleFollowersDisplayed();">
@@ -157,7 +359,6 @@
                         <span onclick="toggleContent('Followers'); toggleFollowersDisplayed();">Show less...</span>
                     </div>
                 </div> <!--end Followers-->
-
                 <!--Drag and Drop-->
                 <div class="article" id="Drag and Drop">
                     <div class="article-title" onclick="toggleContent('Drag and Drop')">
